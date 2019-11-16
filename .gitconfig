@@ -1,0 +1,36 @@
+[user]
+	name = xxx
+	email = xxx
+[core]
+	editor = /usr/bin/nano
+	excludesfile = ~/.gitignore     # globalな.gitignoreの指定
+	autocrlf = false                # 自動CRLF化を防ぐ
+	quotepath = false               # 日本語コミットの文字コード化を防ぐ
+	ignorecase = false              # ファイル名の大文字小文字を区別する
+[color]
+	ui = auto
+[alias]
+	co = checkout
+	ct = commit
+	st = status
+	br = branch
+	df = diff
+	cl = clone
+	p = push
+	po = push origin
+	pdr = push --dry-run # git pushの結果予測
+	l =  log --graph --date=iso --pretty=format:'%x09%C(red)%h %C(green)%cd%Creset [%C(cyan bold)%an%Creset] %C(yellow reverse)%d%Creset %s '
+	la = log --all --graph --date=iso --pretty=format:'%x09%C(red)%h %C(green)%cd%Creset [%C(cyan bold)%an%Creset] %C(yellow reverse)%d%Creset %s '
+    ls = log --pretty=oneline
+    rb = rebase -i
+[gui]
+	encoding = utf-8
+[push]
+	default = current	#upstreamが設定されてなくても同じ名前のブランチを勝手に作ってpushしてくれる
+	#default = upstream	#git branch -vvで確認できるupstreamブランチが設定されていないと失敗
+	#default = simple       #upstreamかつそれが同一名称でないと失敗、デフォルトで初心者向け
+	# see https://qiita.com/awakia/items/6aaea1ffecba725be601
+[diff]	
+	algorithm = histogram
+
+# see https://blog.katsubemakito.net/git/git-config-1st 
