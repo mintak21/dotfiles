@@ -22,9 +22,9 @@
 	pdr = push --dry-run # git pushの結果予測
 	l =  log --graph --date=iso --pretty=format:'%x09%C(red)%h %C(green)%cd%Creset [%C(cyan bold)%an%Creset] %C(magenta  reverse)%d%Creset %s '
 	la = log --all --graph --date=iso --pretty=format:'%x09%C(red)%h %C(green)%cd%Creset [%C(cyan bold)%an%Creset] %C(magenta reverse)%d%Creset %s '
-    ls = log --pretty=oneline
-    m = merge
-    rb = rebase -i
+	ls = log --pretty=oneline
+	m = merge
+	rb = rebase -i
 	confa = config --list
 	confg = config --global --list
 	confl = config --local --list
