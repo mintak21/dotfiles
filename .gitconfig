@@ -13,7 +13,10 @@
 	co = checkout
 	ct = commit
 	st = status
-	br = branch
+	b = branch
+	ba = branch -a
+	bv = branch -avv # upstreamブランチも表示
+	ust = branch -u # <upstream> 現在のブランチに上流ブランチを設定
 	df = diff
 	cl = clone
 	f = fetch origin
