@@ -1,8 +1,8 @@
 [user]
-	name = xxx
-	email = xxx
+	name = mintak21
+	email = mintak21@gmail.com
 [core]
-	editor = /usr/bin/nano
+	editor = vim
 	excludesfile = ~/.gitignore     # globalな.gitignoreの指定
 	autocrlf = false                # 自動CRLF化を防ぐ
 	quotepath = false               # 日本語コミットの文字コード化を防ぐ
@@ -16,14 +16,18 @@
 	br = branch
 	df = diff
 	cl = clone
+	f = fetch origin
 	p = push
-	m = merge
 	po = push origin
 	pdr = push --dry-run # git pushの結果予測
-	l =  log --graph --date=iso --pretty=format:'%x09%C(red)%h %C(green)%cd%Creset [%C(cyan bold)%an%Creset] %C(yellow reverse)%d%Creset %s '
-	la = log --all --graph --date=iso --pretty=format:'%x09%C(red)%h %C(green)%cd%Creset [%C(cyan bold)%an%Creset] %C(yellow reverse)%d%Creset %s '
+	l =  log --graph --date=iso --pretty=format:'%x09%C(red)%h %C(green)%cd%Creset [%C(cyan bold)%an%Creset] %C(magenta  reverse)%d%Creset %s '
+	la = log --all --graph --date=iso --pretty=format:'%x09%C(red)%h %C(green)%cd%Creset [%C(cyan bold)%an%Creset] %C(magenta reverse)%d%Creset %s '
     ls = log --pretty=oneline
+    m = merge
     rb = rebase -i
+	confa = config --list
+	confg = config --global --list
+	confl = config --local --list
 [gui]
 	encoding = utf-8
 [push]

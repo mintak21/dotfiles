@@ -1,16 +1,20 @@
 # Terminal
 # Source for Git PS1 function
 if [ "$PS1" != "" ]; then
-    git_ppt_sh=
+    git_ppt_sh='/usr/local/etc/bash_completion.d/git-prompt.sh'
     if ! type -t __git_ps1 && [ -e "${git_ppt_sh}" ]; then
         . $git_ppt_sh
     fi
     
-    PS1='[\[\033[1;96m\]$\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[93;07m\]$(__git_ps1 " (%s)" 2>/dev/null) \[\033[32m\]\t]\n\$ '
+    PS1='[\[\033[1;36m\]\u\[\033[00m\]:\[\033[00;94m\]\w\[\033[00m\] \[\033[04;91m\]$(__git_ps1 "(%s)" 2>/dev/null)\[\033[00m\] \[\033[32m\]\t\033[00m\]]\n\$ '
+
     
 fi
 
-# alias
-alias ll='ls -l --color=auto'
-alias la='ls -a --color=auto'
-alias lar = 'ls -altR --color=auto'
+# alias(for Mac)
+alias ll='ls -l -G'
+alias la='ls -al -G'
+alias lar='ls -altR -G'
+alias gr='grep --color=auto'
+alias egr='egrep --color=auto'
+
