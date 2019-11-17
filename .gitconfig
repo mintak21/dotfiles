@@ -17,6 +17,7 @@
 	df = diff
 	cl = clone
 	p = push
+	m = merge
 	po = push origin
 	pdr = push --dry-run # git pushの結果予測
 	l =  log --graph --date=iso --pretty=format:'%x09%C(red)%h %C(green)%cd%Creset [%C(cyan bold)%an%Creset] %C(yellow reverse)%d%Creset %s '
