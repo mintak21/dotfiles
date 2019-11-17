@@ -1,8 +1,8 @@
 [user]
-	name = xxx
-	email = xxx
+	name = mintak21
+	email = mintak21@gmail.com
 [core]
-	editor = /usr/bin/nano
+	editor = vim
 	excludesfile = ~/.gitignore     # globalな.gitignoreの指定
 	autocrlf = false                # 自動CRLF化を防ぐ
 	quotepath = false               # 日本語コミットの文字コード化を防ぐ
