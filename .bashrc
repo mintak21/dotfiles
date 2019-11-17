@@ -13,7 +13,7 @@ fi
 
 # alias(for Mac)
 alias ll='ls -l -G'
-alias la='ls -a -G'
+alias la='ls -al -G'
 alias lar='ls -altR -G'
 alias gr='grep --color=auto'
 alias egr='egrep --color=auto'
