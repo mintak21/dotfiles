@@ -11,12 +11,16 @@
 	ui = auto
 [alias]
 	co = checkout
-	ct = commit
+	cob = checkout -b # <new_branch> ブランチ作成用
+	ct = commit -m # <comment>
+	act = commit -am # <comment> ステージングとコミットを同時
 	st = status
 	b = branch
 	ba = branch -a
 	bv = branch -avv # upstreamブランチも表示
-	ust = branch -u # <upstream> 現在のブランチに上流ブランチを設定
+	bd = branch --delete #<del-target> ローカルブランチを削除
+	bdf = branch -D # 強制デリート
+	ust = branch -u # <upstream> <target> <target>ブランチの上流ブランチを<upstream>に設定。<target>を省略するとカレント
 	df = diff
 	cl = clone
 	f = fetch origin
