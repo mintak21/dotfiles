@@ -35,6 +35,12 @@
 	confa = config --list
 	confg = config --global --list
 	confl = config --local --list
+	# git flow系
+	ffl = flow feature -v # featureブランチ一覧を詳細表示
+	ffs = flow feature start # [-F] <name> [<base_branch>] / featureブランチを作成してブランチをスイッチ -F:originからfetch, <name>=ブランチ名,<base_branch>=派生元ブランチ、デフォルトはdevelop
+	ffin = flow feature finish # <name> / いまいるfeatureブランチを<name>ブランチにマージ これを使うと開発者がマージしてdevelopブランチをpushすることとなる(ふつうはレビュワーがpullRequestにてマージするはず)
+				   # option -r=マージでなくrebaseとする / -k featureブランチを削除しない
+	ffp = floe feature publish # <name> /  featureブランチを変更内容をpush git push origin feature/<name>と同等
 [gui]
 	encoding = utf-8
 [push]
