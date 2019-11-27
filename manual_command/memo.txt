@@ -2,11 +2,18 @@
 
 0. Dockからいらないものは消す
 
-1. 
+1. brewとgitをインストール
 xcode-select --install (brew bundleがうまくいかないものがあるため)
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install git
- 
+
+git clone {REPO}
+brew/dotファイルセットアップシェル
+codeコマンドを通す。
+ VSCode起動->F1->shellでcodeをPATHに通す
+vscodeセットアップシェル
+
+※PATHのbash_profile(GOPATH/RUBYPATH)が未完成、シェル化する・
 
 2. キーボード
 　システム環境設定->キーボード
@@ -19,8 +26,4 @@ brew install git
 　・Cmd+SpaceでAutomatorで検索して開く
 　・ワークフロー->アプリケーションを起動->Chrome/Terminalを選んで保存
 　・システム環境設定より、キーボード->サービス->一般でショートカット登録
-
-
-codeコマンドを通す。
- F1->shellでcodeをPATHに通す
 
