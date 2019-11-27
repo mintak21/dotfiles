@@ -42,7 +42,6 @@ function deploy_all() {
 	echo "===start All==="
 	deploy_basic
 	deploy_git
-	deploy_vscode
 	echo "===setup end==="
 }
 
