@@ -29,6 +29,7 @@ vscodeセットアップシェル
 
 4. Chrome拡張機能をいれる
 　extensions.htmlのリンクを１つずつたどってインストール
+　vimiumはmappingとsearchエンジン設定を同一ディレクトリのテキストをコピペ
 
 5. ClipyとShiftitのショートカット設定
 
