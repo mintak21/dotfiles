@@ -13,7 +13,6 @@ codeコマンドを通す。
  VSCode起動->F1->shellでcodeをPATHに通す
 vscodeセットアップシェル
 
-※PATHのbash_profile(GOPATH/RUBYPATH)が未完成、シェル化する・
 
 2. キーボード
 　システム環境設定->キーボード
