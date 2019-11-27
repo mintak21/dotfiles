@@ -2,7 +2,7 @@
 
 How To Use
 
-1. Homebrewを〜gitを以下コマンドでインストール
+1. Homebrew〜gitを以下コマンドでインストール
 
 ```sh
 xcode-select --install
