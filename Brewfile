@@ -9,8 +9,8 @@ brew "git"
 brew "git-flow"
 brew "gist"
 brew "tree"
-brew "goenv"
-brew "rbenv"
+brew "goenv" args: ['HEAD']
+brew "rbenv" args: ['HEAD']
 brew "tree"
 brew "docker"
 brew "docker-compose"
