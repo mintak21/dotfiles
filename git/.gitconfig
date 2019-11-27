@@ -1,0 +1,54 @@
+[user]
+	name = mintak21-MacBook
+	email = mintak21@gmail.com
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore     # globalな.gitignoreの指定
+	autocrlf = false                # 自動CRLF化を防ぐ
+	quotepath = false               # 日本語コミットの文字コード化を防ぐ
+	ignorecase = false              # ファイル名の大文字小文字を区別する
+[color]
+	ui = auto
+[alias]
+	co = checkout
+	cob = checkout -b # <new_branch> ブランチ作成用
+	ct = commit -m # <comment>
+	act = commit -am # <comment> ステージングとコミットを同時
+	st = status
+	b = branch
+	ba = branch -a
+	bv = branch -avv # upstreamブランチも表示
+	bd = branch --delete #<del-target> ローカルブランチを削除
+	bdf = branch -D # 強制デリート
+	ust = branch -u # <upstream> <target> <target>ブランチの上流ブランチを<upstream>に設定。<target>を省略するとカレント
+	df = diff
+	cl = clone
+	f = fetch origin
+	p = push
+	po = push origin
+	pdr = push --dry-run # git pushの結果予測
+	l =  log --graph --date=iso --pretty=format:'%x09%C(red)%h %C(green)%cd%Creset [%C(cyan bold)%an%Creset] %C(magenta  reverse)%d%Creset %s '
+	la = log --all --graph --date=iso --pretty=format:'%x09%C(red)%h %C(green)%cd%Creset [%C(cyan bold)%an%Creset] %C(magenta reverse)%d%Creset %s '
+	ls = log --pretty=oneline
+	m = merge
+	rb = rebase -i
+	confa = config --list
+	confg = config --global --list
+	confl = config --local --list
+	# git flow系
+	ffl = flow feature -v # featureブランチ一覧を詳細表示
+	ffs = flow feature start # [-F] <name> [<base_branch>] / featureブランチを作成してブランチをスイッチ -F:originからfetch, <name>=ブランチ名,<base_branch>=派生元ブランチ、デフォルトはdevelop
+	ffin = flow feature finish # <name> / いまいるfeatureブランチを<name>ブランチにマージ これを使うと開発者がマージしてdevelopブランチをpushすることとなる(ふつうはレビュワーがpullRequestにてマージするはず)
+				   # option -r=マージでなくrebaseとする / -k featureブランチを削除しない
+	ffp = flow feature publish # <name> /  featureブランチを変更内容をpush git push origin feature/<name>と同等
+[gui]
+	encoding = utf-8
+[push]
+	#default = current	#upstreamが設定されてなくても同じ名前のブランチを勝手に作ってpushしてくれる
+	#default = upstream	#git branch -vvで確認できるupstreamブランチが設定されていないと失敗
+	default = simple       #upstreamが設定されているかつそれが同一名称でないと失敗、デフォルトで初心者向け
+	# see https://qiita.com/awakia/items/6aaea1ffecba725be601
+[diff]	
+	algorithm = histogram
+
+# see https://blog.katsubemakito.net/git/git-config-1st 

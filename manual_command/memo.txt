@@ -1,0 +1,26 @@
+コマンドではやりにくい初期設定内容
+
+0. Dockからいらないものは消す
+
+1. 
+xcode-select --install (brew bundleがうまくいかないものがあるため)
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install git
+ 
+
+2. キーボード
+　システム環境設定->キーボード
+　・ファンクションキーにチェック
+　・ユーザ辞書に名前登録
+　・DockとLaunchPadのショートカットを設定
+　・Mission Controlでデスクトップ表示のSC(F11)を解除
+
+3. アイテムショートカット登録
+　・Cmd+SpaceでAutomatorで検索して開く
+　・ワークフロー->アプリケーションを起動->Chrome/Terminalを選んで保存
+　・システム環境設定より、キーボード->サービス->一般でショートカット登録
+
+
+codeコマンドを通す。
+ F1->shellでcodeをPATHに通す
+

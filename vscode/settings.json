@@ -1,0 +1,10 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "editor.fontSize": 14,
+    "files.insertFinalNewline": true,
+    "editor.renderControlCharacters": true,
+    "editor.wordWrap": "on",
+    "terminal.integrated.copyOnSelection": true,
+    "python.dataScience.sendSelectionToInteractiveWindow": false,
+    "editor.minimap.enabled": false
+}

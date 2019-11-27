@@ -1,0 +1,21 @@
+cask_args appdir: "/Applications"
+
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "caskroom/cask"
+
+brew "gcc"
+brew "git"
+brew "git-flow"
+brew "tree"
+brew "goenv"
+brew "rbenv"
+brew "tree"
+brew "docker"
+
+cask "docker"
+cask "google-chrome"
+cask "slack"
+cask "visual-studio-code"
+cask "ngrok"
