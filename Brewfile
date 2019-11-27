@@ -3,7 +3,6 @@ cask_args appdir: "/Applications"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
-tap "caskroom/cask"
 
 brew "gcc"
 brew "git"
