@@ -30,3 +30,5 @@ vscodeセットアップシェル
 4. Chrome拡張機能をいれる
 　extensions.htmlのリンクを１つずつたどってインストール
 
+5. ClipyとShiftitのショートカット設定
+
