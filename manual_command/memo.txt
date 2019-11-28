@@ -1,7 +1,5 @@
 コマンドではやりにくい初期設定内容
 
-0. Dockからいらないものは消す
-
 1. brewとgitをインストール
 xcode-select --install (brew bundleがうまくいかないものがあるため)
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -12,24 +10,38 @@ git clone git@github.com:mintak21/dotfiles.git
 brew/dotファイルセットアップシェル
 codeコマンドを通す。
  VSCode起動->F1->shellでcodeをPATHに通す
-vscodeセットアップシェル
+vscodeセットアップシェル実行
+
+1-1. go/Rubyをインストール
+ goenv install {VERSION}
+ goenv global {VERSION}
+ goenv rehash
+※rbenvでも同じことを行う
+
+1-2. VSCode/Goの設定
+ Terminalからcodeで起動
+ 設定でformatToolをgoimportsにしておく(setting.jsonでなっているはずではあるが)
+ F1->Go Install/Upgrade ToolですべてにチェックをいれてOK
 
 
-2. キーボード
+2. Chrome拡張機能をいれる
+　extensions.htmlのリンクを１つずつたどってインストール
+　vimiumはmappingとsearchエンジン設定を同一ディレクトリのテキストをコピペ
+
+
+3. キーボード
 　システム環境設定->キーボード
 　・ファンクションキーにチェック
 　・ユーザ辞書に名前登録
 　・DockとLaunchPadのショートカットを設定
 　・Mission Controlでデスクトップ表示のSC(F11)を解除
 
-3. アイテムショートカット登録
+4. アイテムショートカット登録
 　・Cmd+SpaceでAutomatorで検索して開く
 　・ワークフロー->アプリケーションを起動->Chrome/Terminalを選んで保存
 　・システム環境設定より、キーボード->サービス->一般でショートカット登録
 
-4. Chrome拡張機能をいれる
-　extensions.htmlのリンクを１つずつたどってインストール
-　vimiumはmappingとsearchエンジン設定を同一ディレクトリのテキストをコピペ
-
 5. ClipyとShiftitのショートカット設定
+
+6. Dockからいらないものは消す
 

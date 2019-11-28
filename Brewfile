@@ -25,12 +25,14 @@ brew "docker-compose"
 
 # Cask App
 cask "clipy"
-cask "docker"
 cask "google-chrome"
 cask "google-japanese-ime"
 cask "github"
 cask "shiftit"
 cask "slack"
 cask "visual-studio-code"
+
+cask "docker"
+cask "virtualbox"
 cask "vagrant"
 cask "ngrok"

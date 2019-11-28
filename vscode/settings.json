@@ -6,5 +6,6 @@
     "editor.wordWrap": "on",
     "terminal.integrated.copyOnSelection": true,
     "python.dataScience.sendSelectionToInteractiveWindow": false,
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "go.formatTool": "goimports"
 }
