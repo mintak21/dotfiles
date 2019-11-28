@@ -2,13 +2,17 @@
 
 0. brewとgitをインストール
 > xcode-select --install (brew bundleがうまくいかないものがあるため)
+
+※ここはgitが入っていない場合のみ実行
 > /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 > brew install git
 
 1-0. ドットファイルのシンボリックリンクを通す
+システム環境設定->セキュリティとプライバシーで鍵をあけておく。※こうしないとbundleで失敗することがある。
 > cd ~
 > git clone git@github.com:mintak21/dotfiles.git
 > sh setup_dotfiles.sh
+※しばらく時間がかかる。ときどきpassword入力を求められる。
 
 codeコマンドを通す。(VSCode起動->F1->shellでcodeをPATHに通す)
 > sh setup_vscode.sh

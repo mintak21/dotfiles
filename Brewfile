@@ -23,16 +23,15 @@ brew 'rsync'
 brew "docker"
 brew "docker-compose"
 
-# Cask App
+# Cask App (軽そうなものが上)
 cask "clipy"
-cask "google-chrome"
-cask "google-japanese-ime"
-cask "github"
 cask "shiftit"
-cask "slack"
-cask "visual-studio-code"
-
-cask "docker"
-cask "virtualbox"
-cask "vagrant"
+cask "github"
+cask "google-japanese-ime"
 cask "ngrok"
+cask "slack"
+cask "virtualbox"
+cask "docker"
+cask "vagrant"
+cask "visual-studio-code"
+cask "google-chrome"

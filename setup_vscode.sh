@@ -11,7 +11,7 @@ function deploy_setting() {
 
 function install_extensions() {
 	# 拡張機能インストール
-	cat extensions | while read line
+	cat ./vscode/extensions | while read line
 	do
 		code --install-extension ${line}
 	done
