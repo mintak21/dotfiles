@@ -12,10 +12,23 @@ function install_homebrew() {
 	brew bundle
 }
 
+function backup() {
+	if [ -e $HOME/.bashrc ]; then
+		cp $HOME/.bashrc $HOME/.bashrc.bk
+		echo "bashrc backuped"
+	fi
+	if [ -e $HOME/.bash_profile ]; then
+		cp $HOME/.bash_profile $HOME/.bash_profile.bk
+		echo "bash_profile backuped"
+	fi
+}
+
 function deploy_basic() {
 	echo "start deploy basic..."
 
+	backup
 	ln -fnsv $HOME/${dirName}/.bashrc $HOME/.bashrc	 # bashrc
+	ln -fnsv $HOME/${dirName}/.bash_profile $HOME/.bash_profile # bash_profile
 	ln -fnsv $HOME/${dirName}/.vimrc $HOME/.vimrc    # vim
 	
 	echo "end deploy basic"
