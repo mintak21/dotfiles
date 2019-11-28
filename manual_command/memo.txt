@@ -1,21 +1,22 @@
 コマンドではやりにくい初期設定内容
 
-1. brewとgitをインストール
-xcode-select --install (brew bundleがうまくいかないものがあるため)
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install git
+0. brewとgitをインストール
+> xcode-select --install (brew bundleがうまくいかないものがあるため)
+> /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+> brew install git
 
-cd ~
-git clone git@github.com:mintak21/dotfiles.git
-brew/dotファイルセットアップシェル
-codeコマンドを通す。
- VSCode起動->F1->shellでcodeをPATHに通す
-vscodeセットアップシェル実行
+1-0. ドットファイルのシンボリックリンクを通す
+> cd ~
+> git clone git@github.com:mintak21/dotfiles.git
+> sh setup_dotfiles.sh
+
+codeコマンドを通す。(VSCode起動->F1->shellでcodeをPATHに通す)
+> sh setup_vscode.sh
 
 1-1. go/Rubyをインストール
- goenv install {VERSION}
- goenv global {VERSION}
- goenv rehash
+> goenv install {VERSION}
+> goenv global {VERSION}
+> goenv rehash
 ※rbenvでも同じことを行う
 
 1-2. VSCode/Goの設定
