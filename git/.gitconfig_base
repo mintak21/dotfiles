@@ -1,6 +1,6 @@
 [user]
-	name = mintak21-MacBook
-	email = mintak21@gmail.com
+	name = REP_NAME
+	email = REP_EMAIL
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore     # globalな.gitignoreの指定

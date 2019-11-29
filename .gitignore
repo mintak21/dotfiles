@@ -1,0 +1,2 @@
+# この階層自身のgitconfigはname/emailが環境によって異なるので共有しない
+*.gitconfig
