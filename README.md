@@ -15,7 +15,7 @@ brew install git
 ```sh
 cd ~
 git clone git@github.com:mintak21/dotfiles.git
-sh setup_dotfiles.sh
+sh setup_dotfiles.sh {GIT_NAME} {GIT_EMAIL}
 ```
 
 3. VSCodeでcodeコマンドをPATHに通した後、VSCodeの設定と拡張機能をインストール

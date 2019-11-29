@@ -68,7 +68,7 @@ if [ -z "$2" ]; then
 	exit 1
 fi
 
-#install_homebrew
-#deploy_basic
+install_homebrew
+deploy_basic
 deploy_git "$1" "$2"
 printf '\033[92m%s\033[m\n' '===setup ended==='
