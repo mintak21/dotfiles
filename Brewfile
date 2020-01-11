@@ -9,29 +9,31 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 
 # OS X App
+brew "bash-completion"
 brew "gcc"
 brew "git"
 brew "gist"
+brew "tig"
 brew "tree"
 brew "goenv", args: ['HEAD']
 brew "rbenv", args: ['HEAD']
 brew "pyenv", args: ['HEAD']
 brew "tree"
-brew 'rsync'
 
 # Docker
 brew "docker"
 brew "docker-compose"
+# DB
+brew "postgresql"
 
 # Cask App (軽そうなものが上)
 cask "clipy"
-cask "shiftit"
 cask "github"
 cask "google-japanese-ime"
 cask "ngrok"
 cask "slack"
 cask "virtualbox"
-cask "docker"
+cask "docker" # Docker for Mac
 cask "vagrant"
 cask "visual-studio-code"
 cask "google-chrome"
