@@ -33,9 +33,9 @@ function deploy_basic() {
 	printf '\033[91m%s\033[m\n' 'start deploy basic...'
 
 	backup
-	ln -fnsv $HOME/${dirName}/.bashrc $HOME/.bashrc	 # bashrc
-	ln -fnsv $HOME/${dirName}/.bash_profile $HOME/.bash_profile # bash_profile
-	ln -fnsv $HOME/${dirName}/.vimrc $HOME/.vimrc    # vim
+	ln -fnsv $HOME/${dirName}/bash/.bashrc $HOME/.bashrc	 # bashrc
+	ln -fnsv $HOME/${dirName}/bash/.bash_profile $HOME/.bash_profile # bash_profile
+	ln -fnsv $HOME/${dirName}/vim/.vimrc $HOME/.vimrc    # vim
 
 	printf '\033[36m%s\033[m\n' 'end deploy basic'
 }
