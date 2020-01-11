@@ -15,7 +15,7 @@
     "python.linting.pycodestyleEnabled": false,
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Args": [
-        "--ignore=W293, W504",
+        "--ignore=E221, W293, W504", // allow Multiple space
         "--max-line-length=150",
         "--max-complexity=20"
     ],
