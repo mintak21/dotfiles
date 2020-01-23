@@ -26,6 +26,9 @@ brew "docker-compose"
 # DB
 brew "postgresql"
 
+brew "ansible"
+brew "tfenv"
+
 # Cask App (軽そうなものが上)
 cask "clipy"
 cask "github"
