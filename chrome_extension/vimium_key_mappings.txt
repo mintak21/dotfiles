@@ -1,12 +1,10 @@
 # スクロール
-map k scrollDown
-map i scrollUp
-map j scrollLeft
+map j scrollDown
+map k scrollUp
+map h scrollLeft
 map l scrollRight
 map o scrollFullPageDown
 map u scrollFullPageUp
-map h scrollToTop
-map ; scrollToBottom
 # URL遷移
 map J goBack
 map L goForward
