@@ -28,6 +28,9 @@
         "editor.formatOnSave": true,              // 保存時に自動整形を行う
         "editor.formatOnPaste": false,            // ペースト時に自動整形を行わない
         "editor.formatOnType": false,             // 入力後に自動整形を行わない
+        "editor.codeActionsOnSave": {
+            "source.organizeImports":true
+        },
     },
     "git.ignoreLegacyWarning": true,
     "window.zoomLevel": -1,
