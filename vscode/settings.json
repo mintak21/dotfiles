@@ -1,37 +1,57 @@
 {
-    "workbench.iconTheme": "vscode-icons",
-    "editor.fontSize": 14,
-    "files.insertFinalNewline": true,
-    "editor.renderControlCharacters": true,
-    "editor.wordWrap": "on",
-    "terminal.integrated.copyOnSelection": true,
-    "python.dataScience.sendSelectionToInteractiveWindow": false,
-    "editor.minimap.enabled": false,
-    "go.formatTool": "goimports",
-
-    "files.autoSave": "afterDelay",
-    "python.linting.lintOnSave": true,
-    "python.linting.pylintEnabled": false,
-    "python.linting.pycodestyleEnabled": false,
-    "python.linting.flake8Enabled": true,
-    "python.linting.flake8Args": [
-        "--ignore=E221, W293, W504", // allow Multiple space
-        "--max-line-length=150",
-        "--max-complexity=20"
-    ],
-    "python.formatting.provider": "autopep8",
-    "python.formatting.autopep8Args": [
-        "--aggressive", "--aggressive",
-    ],
-    "autoDocstring.docstringFormat": "google",
-    "[python]": {
-        "editor.formatOnSave": true,              // 保存時に自動整形を行う
-        "editor.formatOnPaste": false,            // ペースト時に自動整形を行わない
-        "editor.formatOnType": false,             // 入力後に自動整形を行わない
-        "editor.codeActionsOnSave": {
-            "source.organizeImports":true
-        },
+  "workbench.iconTheme": "vscode-icons",
+  "window.zoomLevel": -1,               // 全体ウィンドウ
+  // file
+  "files.autoSave": "afterDelay",       // 自動保存ポリシー
+  "files.autoSaveDelay": 5000,          // 5秒後に自動保存
+  "files.insertFinalNewline": true,     // 最終行に空行を挿入
+  // editor
+  "editor.fontSize": 14,                // 文字サイズ
+  "editor.renderControlCharacters": true,
+  "editor.wordWrap": "on",              // 1行が長い場合、折り返す
+  "editor.detectIndentation": false,    // タブサイズの自動推定を行わない
+  "editor.tabSize": 2,                  // タブスペース=2
+  "editor.minimap.enabled": false,      // ミニマップ無表示
+  // python
+  "python.dataScience.sendSelectionToInteractiveWindow": false,
+  "python.linting.lintOnSave": true,            // 保存時自動lint
+  "python.linting.pylintEnabled": false,        // pylint:Off
+  "python.linting.pycodestyleEnabled": false,   // pycodeStyle:Off
+  "python.linting.flake8Enabled": true,         // lintにはflake8を使用
+  "python.linting.flake8Args": [                // flake8の引数
+    "--ignore=E221, W293, W504", // allow Multiple space
+    "--max-line-length=150",
+    "--max-complexity=20"
+  ],
+  "python.formatting.provider": "autopep8",     // formatterにはautopep8を使用
+  "python.formatting.autopep8Args": [           // autopep8の引数
+    "--aggressive", "--aggressive",
+  ],
+  "autoDocstring.docstringFormat": "google",    // docstringのデフォルトフォーマット
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,              // 保存時に自動整形を行う
+    "editor.formatOnPaste": false,            // ペースト時に自動整形を行わない
+    "editor.formatOnType": false,             // 入力後に自動整形を行わない
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true          // 保存時import整理
     },
-    "git.ignoreLegacyWarning": true,
-    "window.zoomLevel": -1,
+  },
+  // go
+  "go.formatTool": "goimports",   // goimportでformat
+  "go.useLanguageServer": true,
+  "[go]": {
+    "editor.tabSize": 4,          // goのインデントは4
+  },
+  // ruby
+  "[ruby]": {
+    "editor.tabSize": 2,
+  },
+  // java
+  "[java]": {
+    "editor.tabSize": 4,
+  },
+  // others
+  "git.ignoreLegacyWarning": true,
+  "terminal.integrated.copyOnSelection": true,
 }
