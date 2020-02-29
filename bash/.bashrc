@@ -35,3 +35,4 @@ alias ckinst='brew cask install'
 alias ckuninst='brew cask uninstall'
 alias brb='brew bundle'
 alias brbd='brew bundle dump --force' #Brewfile作成/上書き
+

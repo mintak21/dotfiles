@@ -41,6 +41,8 @@
 	ffin = flow feature finish # <name> / いまいるfeatureブランチを<name>ブランチにマージ これを使うと開発者がマージしてdevelopブランチをpushすることとなる(ふつうはレビュワーがpullRequestにてマージするはず)
 				   # option -r=マージでなくrebaseとする / -k featureブランチを削除しない
 	ffp = flow feature publish # <name> /  featureブランチを変更内容をpush git push origin feature/<name>と同等
+[commit]
+	template = $HOME/dotfiles/git/.commit_template 
 [gui]
 	encoding = utf-8
 [push]
