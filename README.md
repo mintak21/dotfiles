@@ -16,7 +16,7 @@ brew install git
 cd ~
 git clone git@github.com:mintak21/dotfiles.git
 make setup GIT_NAME={GIT_NAME} GIT_EMAIL={GIT_EMAIL}
-make completion
+make bash_completion
 ```
 
 3. VSCodeでcodeコマンドをPATHに通した後、VSCodeの設定と拡張機能をインストール
