@@ -18,14 +18,20 @@ brew "tree"
 brew "goenv", args: ['HEAD']
 brew "rbenv", args: ['HEAD']
 brew "pyenv", args: ['HEAD']
-brew "tree"
 
-# Docker
+# Docker/k8s
 brew "docker"
 brew "docker-compose"
+brew "kubernetes-cli"
+brew "kube-ps1"
+brew "kubectx"
+brew "kubens"
+brew "stern"
+
 # DB
 brew "postgresql"
 
+# ansible/terraform
 brew "ansible"
 brew "tfenv"
 
@@ -40,3 +46,5 @@ cask "docker" # Docker for Mac
 cask "vagrant"
 cask "visual-studio-code"
 cask "google-chrome"
+cask "postico"
+

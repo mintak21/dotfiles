@@ -1,14 +1,18 @@
 # Terminal
 # Source for Git PS1 function
 if [ "$PS1" != "" ]; then
-    git_ppt_sh='/usr/local/etc/bash_completion.d/git-prompt.sh'
-    if ! type -t __git_ps1 && [ -e "${git_ppt_sh}" ]; then
-        . $git_ppt_sh
-    fi
-    
-    PS1='[\[\033[1;36m\]\u\[\033[00m\]:\[\033[00;94m\]\w\[\033[00m\] \[\033[04;91m\]$(__git_ps1 "(%s)" 2>/dev/null)\[\033[00m\] \[\033[32m\]\t\033[00m\]]\n\$ '
+	# git branch表示
+	git_ppt_sh='/usr/local/etc/bash_completion.d/git-prompt.sh'
+	if ! type -t __git_ps1 && [ -e "${git_ppt_sh}" ]; then
+		. ${git_ppt_sh}
+	fi
 
-    
+	# k8s cluster表示
+	kube_ps1_sh='/usr/local/opt/kube-ps1/share/kube-ps1.sh'
+	if [ -e "${kube_ps1_sh}" ]; then
+		. ${kube_ps1_sh}
+	fi
+	PS1='[\[\033[1;36m\]\u\[\033[00m\]:\[\033[00;94m\]\w\[\033[00m\] \[\033[04;91m\]$(__git_ps1 "(%s)" 2>/dev/null)\[\033[00m\] $(kube_ps1) \[\033[32m\]\t\033[00m\]]\n\$ '
 fi
 
 # alias(for Mac)
