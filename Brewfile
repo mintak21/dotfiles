@@ -25,7 +25,6 @@ brew "docker-compose"
 brew "kubernetes-cli"
 brew "kube-ps1"
 brew "kubectx"
-brew "kubens"
 brew "stern"
 
 # DB
