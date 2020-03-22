@@ -51,7 +51,13 @@
   "[java]": {
     "editor.tabSize": 4,
   },
+  // javascript
+  "[javascript]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
   // others
   "git.ignoreLegacyWarning": true,
   "terminal.integrated.copyOnSelection": true,
+  "vsicons.dontShowNewVersionMessage": true,
 }
