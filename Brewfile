@@ -48,4 +48,5 @@ cask "vagrant"
 cask "visual-studio-code"
 cask "google-chrome"
 cask "postico"
+cask "iterm2"
 
