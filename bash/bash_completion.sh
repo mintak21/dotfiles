@@ -12,6 +12,7 @@ curl -L https://raw.githubusercontent.com/hashicorp/vagrant/v$(vagrant -v | awk 
 
 # kubectl
 kubectl completion bash > $(brew --prefix)/etc/bash_completion.d/kubectl
+kind completion bash > $(brew --prefix)/etc/bash_completion.d/kind
 
 # terraform
 echo "complete -C /usr/local/Cellar/tfenv/1.0.2/versions/0.12.20/terraform terraform" > $(brew --prefix)/etc/bash_completion.d/terraform

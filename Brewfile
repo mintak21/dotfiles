@@ -27,6 +27,7 @@ brew "kube-ps1"
 brew "kubectx"
 brew "kubespy"
 brew "stern"
+brew "kind" # Kubernetes in Docker
 
 # DB
 brew "postgresql"
