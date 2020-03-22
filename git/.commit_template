@@ -1,7 +1,7 @@
 
 
 # ==== Commit Format ====
-# [prefix]Subject:Emoji:
+# [prefix] Subject :Emoji:
 
 # ==== Emojis ====
 # ✨  :sparkles:    機能追加
@@ -17,12 +17,14 @@
 # 🔒  :lock:        新機能の公開範囲の制限
 # 👮  :cop:         セキュリティ関連の改善
 # 🎉  :tada:        初回コミット
+# 🚃  :railway_car: ディレクトリ移動
 
 # ==== Prefix ====
-# feat     新規機能追加
-# fix      バグ修正
-# doc      ドキュメント追加・更新
-# style    フォーマット修正
-# refactor リファクタリング
-# test     テストコード
+# feat      新規機能追加
+# fix       バグ修正
+# doc       ドキュメント追加・更新
+# style     フォーマット修正
+# refactor  リファクタリング
+# test      テストコード
+# structure 構造変更
 
