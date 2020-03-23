@@ -23,3 +23,8 @@ export KUBE_PS1_SUFFIX='>'
 # load bashrc
 source ~/.bashrc
 
+# load completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
