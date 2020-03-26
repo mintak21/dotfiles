@@ -10,6 +10,7 @@ tap "homebrew/cask-versions"
 
 # OS X App
 brew "bash-completion"
+brew "hub"
 brew "gcc"
 brew "git"
 brew "gist"
