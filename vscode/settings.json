@@ -60,4 +60,6 @@
   "git.ignoreLegacyWarning": true,
   "terminal.integrated.copyOnSelection": true,
   "vsicons.dontShowNewVersionMessage": true,
+  "editor.renderWhitespace": "all",
+  "todo-tree.tree.showScanModeButton": false,
 }
