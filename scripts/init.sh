@@ -10,6 +10,8 @@ function install_brew_formulas() {
 	printf '\033[91m%s\033[m\n' 'start bundle'
 	brew upgrade
 	brew bundle --file ../brew/Brewfile
+  # VSCodeはインストール後、コマンドラインで扱えるようにリンクを張る
+  ln -fnsv /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /usr/local/bin
 	printf '\033[36m%s\033[m\n' 'end bundle install'
 }
 
@@ -32,6 +34,7 @@ function install_vscode_extensions() {
 }
 
 cd `dirname $0`
-#install_brew_formulas
+xcode-select --install # これが入っていないと失敗するパッケージがある
+install_brew_formulas
 install_vscode_extensions
-#install_fonts
+install_fonts
