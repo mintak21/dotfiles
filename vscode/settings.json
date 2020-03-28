@@ -6,7 +6,7 @@
   "files.autoSaveDelay": 5000,          // 5秒後に自動保存
   "files.insertFinalNewline": true,     // 最終行に空行を挿入
   // editor
-  "editor.fontSize": 20,                // 文字サイズ
+  "editor.fontSize": 18,                // 文字サイズ
   "editor.renderControlCharacters": true,
   "editor.wordWrap": "on",              // 1行が長い場合、折り返す
   "editor.detectIndentation": false,    // タブサイズの自動推定を行わない
@@ -14,10 +14,10 @@
   "editor.minimap.enabled": false,      // ミニマップ無表示
   // Fonts
   "editor.fontFamily": "Ricty, 'Ricty Diminished', Menlo, Monaco, 'Courier New', monospace",
-  "debug.console.fontSize": 16,
-  "terminal.integrated.fontSize": 16,
-  "rest-client.fontSize": 16,
-  "markdown.preview.fontSize": 16,
+  "debug.console.fontSize": 16,         // デバッグコンソールのフォントサイズ
+  "terminal.integrated.fontSize": 16,   // ターミナルのフォントサイズ
+  "markdown.preview.fontSize": 16,      // MarkDownプレビューのフォントサイズ
+  "rest-client.fontSize": 16,           // 拡張機能RestClientのフォントサイズ
   // python
   "python.dataScience.sendSelectionToInteractiveWindow": false,
   "python.linting.lintOnSave": true,            // 保存時自動lint

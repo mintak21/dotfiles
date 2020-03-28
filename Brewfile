@@ -7,6 +7,7 @@ tap "homebrew/core"
 tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
+tap "sanemat/font" # For Ricty
 
 # OS X App
 brew "bash-completion"
@@ -19,6 +20,7 @@ brew "tree"
 brew "goenv", args: ['HEAD']
 brew "rbenv", args: ['HEAD']
 brew "pyenv", args: ['HEAD']
+brew "ricty"
 
 # Docker/k8s
 brew "docker"
@@ -37,11 +39,10 @@ brew "postgresql"
 brew "ansible"
 brew "tfenv"
 
-# Cask App (軽そうなものが上)
+# Cask App
 cask "clipy"
 cask "github"
 cask "google-japanese-ime"
-cask "ngrok"
 cask "slack"
 cask "virtualbox"
 cask "docker" # Docker for Mac
@@ -50,4 +51,4 @@ cask "visual-studio-code"
 cask "google-chrome"
 cask "postico"
 cask "iterm2"
-
+cask "font-ricty-diminished"
