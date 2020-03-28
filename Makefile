@@ -1,6 +1,6 @@
 GIT_EMAIL=mintak21@gmail.com
 
-.PHONY: init deploy
+.PHONY: init deploy clean
 
 init:
 	sh scripts/init.sh
@@ -9,3 +9,5 @@ init:
 deploy:
 	sh scripts/deploy.sh {GIT_NAME} {GIT_EMAIL}
 
+clean:
+	sh scripts/unlink.sh
