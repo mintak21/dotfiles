@@ -1,13 +1,11 @@
 GIT_EMAIL=mintak21@gmail.com
 
-.PHONY: bash_completion setup vscode_setup
+.PHONY: init deploy
 
-bash_completion:
-	sh bash/bash_completion.sh
+init:
+	sh scripts/init.sh
+	sh scripts/bash_completion.sh
 
-setup:
-	sh setup_dotfiles.sh {GIT_NAME} {GIT_EMAIL}
-
-vscode_setup:
-	sh setup_vscode.sh
+deploy:
+	sh scripts/deploy.sh {GIT_NAME} {GIT_EMAIL}
 

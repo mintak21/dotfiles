@@ -3,29 +3,16 @@
 # MacOSを前提
 # 基本的にシンボリックリンクを作成
 # 存在している場合も強制的に上書きを行う
-cd `dirname $0`
 dirName="dotfiles"
-
-function install_homebrew() {
-	#そもそもこれたたけている時点で、gitまでは入っている必要がある点は注意
-	printf '\033[91m%s\033[m\n' 'start install home-brew'
-	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-	printf '\033[36m%s\033[m\n' 'success homebrew install'
-
-	printf '\033[91m%s\033[m\n' 'start bundle'
-	brew upgrade
-	brew bundle
-	printf '\033[36m%s\033[m\n' 'end bundle install'
-}
 
 function backup() {
 	if [ -e $HOME/.bashrc ]; then
-		cp $HOME/.bashrc $HOME/.bashrc.bk
-		printf '\033[32m%s\033[m\n' 'bashrc backuped'
+		cp -f $HOME/.bashrc $HOME/.bashrc.bk
+		printf '\033[32m%s\033[m\n' 'bashrc has backuped'
 	fi
 	if [ -e $HOME/.bash_profile ]; then
-		cp $HOME/.bash_profile $HOME/.bash_profile.bk
-		printf '\033[32m%s\033[m\n' 'bash_profile backuped'
+		cp -f $HOME/.bash_profile $HOME/.bash_profile.bk
+		printf '\033[32m%s\033[m\n' 'bash_profile has backuped'
 	fi
 }
 
@@ -68,7 +55,7 @@ if [ -z "$2" ]; then
 	exit 1
 fi
 
-install_homebrew
 deploy_basic
 deploy_git "$1" "$2"
+deploy_vscode
 printf '\033[92m%s\033[m\n' '===setup ended==='
