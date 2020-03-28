@@ -9,46 +9,65 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "sanemat/font" # For Ricty
 
-# OS X App
+# Terminal
 brew "bash-completion"
-brew "hub"
 brew "gcc"
-brew "git"
-brew "gist"
-brew "tig"
 brew "tree"
+cask "iterm2"
+
+# Programming Languages
 brew "goenv", args: ['HEAD']
 brew "rbenv", args: ['HEAD']
 brew "pyenv", args: ['HEAD']
-brew "ricty"
 
-# Docker/k8s
-brew "docker"
-brew "docker-compose"
+# Programming Fonts
+brew "ricty"
+cask "font-ricty-diminished"
+
+# DataBase
+brew "postgresql"
+cask "postico"
+
+# Git
+brew "hub"
+brew "git"
+brew "gist"
+brew "tig"
+cask "github"
+
+# Docker
+cask "docker" # Docker for Mac
+
+# k8s
 brew "kubernetes-cli"
 brew "kube-ps1"
 brew "kubectx"
 brew "kubespy"
 brew "stern"
 brew "kind" # Kubernetes in Docker
+brew "helm"
+brew "kustomize"
+brew "skaffold"
 
-# DB
-brew "postgresql"
-
-# ansible/terraform
+# ansible
 brew "ansible"
+
+# terraform
 brew "tfenv"
 
-# Cask App
-cask "clipy"
-cask "github"
-cask "google-japanese-ime"
-cask "slack"
-cask "virtualbox"
-cask "docker" # Docker for Mac
+# cloud
+cask "google-cloud-sdk"
+brew "awscli"
+
+# vagrant
 cask "vagrant"
-cask "visual-studio-code"
+cask "virtualbox"
+
+# Applications
 cask "google-chrome"
-cask "postico"
-cask "iterm2"
-cask "font-ricty-diminished"
+cask "slack"
+cask "visual-studio-code"
+
+# Tools
+cask "clipy"
+cask "google-japanese-ime"
