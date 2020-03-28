@@ -26,3 +26,5 @@ echo "complete -C /usr/local/Cellar/tfenv/1.0.2/versions/0.12.20/terraform terra
 #curl -L https://raw.githubusercontent.com/dysosmus/ansible-completion/master/ansible-playbook-completion.bash > $(brew --prefix)/etc/bash_completion.d/ansible-playbook
 #curl -L https://raw.githubusercontent.com/dysosmus/ansible-completion/master/ansible-vault-completion.bash > $(brew --prefix)/etc/bash_completion.d/ansible-vault
 
+# aws-cli
+complete -C '$(brew --prefix)/bin/aws_completer' aws
