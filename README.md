@@ -1,26 +1,24 @@
 ## Dot Files Storehouse
-
-How To Use
-
-1. Homebrew〜gitを以下コマンドでインストール
-
-```sh
-xcode-select --install
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install git
-``` 
-
-2. リポジトリをcloneし、dotfileのセットアップ
+1. clone repository to ${HOME}
 
 ```sh
 cd ~
 git clone git@github.com:mintak21/dotfiles.git
-make setup GIT_NAME={GIT_NAME} GIT_EMAIL={GIT_EMAIL}
-make bash_completion
 ```
 
-3. VSCodeでcodeコマンドをPATHに通した後、VSCodeの設定と拡張機能をインストール
+2. setup
+
 ```sh
-make vscode_setup
+# Create Dotfiles Symbolic link
+make deploy GIT_NAME={GIT_NAME} GIT_EMAIL={GIT_EMAIL}
+# Install Packages
+make init
 ```
 
+3. cleanup
+
+```sh
+make clean
+cd ..
+rm -rf dotfiles
+```
