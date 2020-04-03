@@ -1,5 +1,5 @@
 # git
-curl -L https://raw.githubusercontent.com/git/git/v$(git version | awk -F' ' '{print $3}')/contrib/completion/git-completion.bash > $(brew --prefix)/etc/bash_completion.d/git
+curl -L https://raw.githubusercontent.com/git/git/v$(git version | awk -F' ' '{print $3}')/contrib/completion/git-completion.bash >$(brew --prefix)/etc/bash_completion.d/git
 
 # Docker
 #curl -L https://raw.githubusercontent.com/docker/docker-ce/$(docker --version | awk -F' ' '{print $3}' | cut -c 1-5)/components/cli/contrib/completion/bash/docker > $(brew --prefix)/etc/bash_completion.d/docker
@@ -12,14 +12,14 @@ ln -fnsv /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion 
 ln -fnsv /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion $(brew --prefix)/etc/bash_completion.d/docker-compose
 
 # kubectl
-kubectl completion bash > $(brew --prefix)/etc/bash_completion.d/kubectl
-kind completion bash > $(brew --prefix)/etc/bash_completion.d/kind
+kubectl completion bash >$(brew --prefix)/etc/bash_completion.d/kubectl
+kind completion bash >$(brew --prefix)/etc/bash_completion.d/kind
 
 # vagrant
-curl -L https://raw.githubusercontent.com/hashicorp/vagrant/v$(vagrant -v | awk -F' ' '{print $2}')/contrib/bash/completion.sh > $(brew --prefix)/etc/bash_completion.d/vagrant
+curl -L https://raw.githubusercontent.com/hashicorp/vagrant/v$(vagrant -v | awk -F' ' '{print $2}')/contrib/bash/completion.sh >$(brew --prefix)/etc/bash_completion.d/vagrant
 
 # terraform
-echo "complete -C /usr/local/Cellar/tfenv/1.0.2/versions/0.12.20/terraform terraform" > $(brew --prefix)/etc/bash_completion.d/terraform
+echo "complete -C /usr/local/Cellar/tfenv/1.0.2/versions/0.12.20/terraform terraform" >$(brew --prefix)/etc/bash_completion.d/terraform
 
 # ansible (disabled 2020/03)
 #curl -L https://raw.githubusercontent.com/dysosmus/ansible-completion/master/ansible-completion.bash > $(brew --prefix)/etc/bash_completion.d/ansible

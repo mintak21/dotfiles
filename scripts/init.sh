@@ -2,17 +2,17 @@
 # deploy前提
 
 function install_brew_formulas() {
-	printf '\033[91m%s\033[m\n' 'start install home-brew'
-	#/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" # deprecated
+  printf '\033[91m%s\033[m\n' 'start install home-brew'
+  #/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" # deprecated
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-	printf '\033[36m%s\033[m\n' 'success homebrew install'
+  printf '\033[36m%s\033[m\n' 'success homebrew install'
 
-	printf '\033[91m%s\033[m\n' 'start bundle'
-	brew upgrade
-	brew bundle --file ../brew/Brewfile
+  printf '\033[91m%s\033[m\n' 'start bundle'
+  brew upgrade
+  brew bundle --file ../brew/Brewfile
   # VSCodeはインストール後、コマンドラインで扱えるようにリンクを張る
   ln -fnsv /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /usr/local/bin
-	printf '\033[36m%s\033[m\n' 'end bundle install'
+  printf '\033[36m%s\033[m\n' 'end bundle install'
 }
 
 function install_fonts() {
@@ -24,16 +24,15 @@ function install_fonts() {
 }
 
 function install_vscode_extensions() {
-	# VSCode拡張機能インストール
+  # VSCode拡張機能インストール
   printf '\033[91m%s\033[m\n' 'start install vscode extensions'
-	cat ../vscode/extensions | while read line
-	do
-		code --install-extension ${line}
-	done
+  cat ../vscode/extensions | while read line; do
+    code --install-extension ${line}
+  done
   printf '\033[36m%s\033[m\n' 'end install vscode extensions'
 }
 
-cd `dirname $0`
+cd $(dirname $0)
 xcode-select --install # これが入っていないと失敗するパッケージがある
 install_brew_formulas
 install_vscode_extensions

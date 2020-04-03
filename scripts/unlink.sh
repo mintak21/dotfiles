@@ -9,7 +9,6 @@ dotfiles=(
   .vimrc
 )
 
-for file in "${dotfiles[@]}"
-do
+for file in "${dotfiles[@]}"; do
   unlink $HOME/${file}
 done
