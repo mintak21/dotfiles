@@ -12,7 +12,7 @@ tap "sanemat/font" # For Ricty
 # Terminal
 brew "bash-completion"
 brew "gcc"
-brew "tree"
+brew "exa"
 cask "iterm2"
 
 # Programming Languages
