@@ -54,8 +54,7 @@ fi
 alias brew="env PATH=/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin brew" # anacondaなど余計なものを読み込まない
 
 # basicなエイリアス
-alias ll='ls -l -G'
-alias la='ls -al -G'
-alias lar='ls -altR -G'
-alias gr='grep --color=auto'
-alias egr='egrep --color=auto'
+alias ll='exa -lhF --created --modified --sort=type --time-style=long-iso --git --color-scale'
+alias la='exa -alhF --created --modified --sort=type --time-style=long-iso --git --color-scale'
+alias lar='exa -alhRF --color-scale'
+alias tree='exa -TF'
