@@ -13,6 +13,7 @@ tap "sanemat/font" # For Ricty
 brew "bash-completion"
 brew "gcc"
 brew "exa"
+brew "ripgrep"
 cask "iterm2"
 
 # Programming Languages
