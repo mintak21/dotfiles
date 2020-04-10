@@ -11,6 +11,7 @@ tap "sanemat/font" # For Ricty
 
 # Terminal
 brew "bash-completion"
+brew "bat"
 brew "gcc"
 brew "exa"
 brew "ripgrep"
