@@ -7,7 +7,7 @@ init:
 	sh scripts/bash_completion.sh
 
 deploy:
-	sh scripts/deploy.sh {GIT_NAME} {GIT_EMAIL}
+	sh scripts/deploy.sh ${GIT_NAME} ${GIT_EMAIL}
 
 clean:
 	sh scripts/unlink.sh
