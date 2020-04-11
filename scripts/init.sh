@@ -26,7 +26,7 @@ function install_fonts() {
 function install_vscode_extensions() {
   # VSCode拡張機能インストール
   printf '\033[91m%s\033[m\n' 'start install vscode extensions'
-  cat ../vscode/extensions | while read line; do
+  cat ./vscode/extensions | while read line; do
     code --install-extension ${line}
   done
   printf '\033[36m%s\033[m\n' 'end install vscode extensions'
