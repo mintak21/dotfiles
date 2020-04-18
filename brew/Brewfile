@@ -16,6 +16,7 @@ brew "gcc"
 brew "exa"
 brew "fd"
 brew "ripgrep"
+brew "cjbassi/ytop/ytop"
 cask "iterm2"
 
 # Programming Languages
