@@ -58,7 +58,7 @@ alias ll='exa -lhF --created --modified --sort=type --time-style=long-iso --git 
 alias la='exa -alhF --created --modified --sort=type --time-style=long-iso --git --color-scale'
 alias lar='exa -alhRF --color-scale'
 alias tree='exa -TF'
-alias fd='fd --hidden --case-sensitive'
+alias fda='fd --hidden --case-sensitive'
 
 # infrastructure
 alias d='docker'
