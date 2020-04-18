@@ -59,3 +59,17 @@ alias la='exa -alhF --created --modified --sort=type --time-style=long-iso --git
 alias lar='exa -alhRF --color-scale'
 alias tree='exa -TF'
 alias fd='fd --hidden --case-sensitive'
+
+# infrastructure
+alias d='docker'
+alias dc='docker-compose'
+alias k='kubectl'
+alias kx='kubectx'
+alias tf='terraform'
+complete -o default -F _docker d
+complete -o default -F _docker_compose dc
+complete -o default -F __start_kubectl k
+complete -o default -F _kube_contexts kx
+if type terraform &> /dev/null; then
+  complete -C terraform tf
+fi
