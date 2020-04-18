@@ -18,9 +18,6 @@ kind completion bash >$(brew --prefix)/etc/bash_completion.d/kind
 # vagrant
 curl -L https://raw.githubusercontent.com/hashicorp/vagrant/v$(vagrant -v | awk -F' ' '{print $2}')/contrib/bash/completion.sh >$(brew --prefix)/etc/bash_completion.d/vagrant
 
-# terraform
-echo "complete -C /usr/local/Cellar/tfenv/1.0.2/versions/0.12.20/terraform terraform" >$(brew --prefix)/etc/bash_completion.d/terraform
-
 # ansible (disabled 2020/03)
 #curl -L https://raw.githubusercontent.com/dysosmus/ansible-completion/master/ansible-completion.bash > $(brew --prefix)/etc/bash_completion.d/ansible
 #curl -L https://raw.githubusercontent.com/dysosmus/ansible-completion/master/ansible-playbook-completion.bash > $(brew --prefix)/etc/bash_completion.d/ansible-playbook
