@@ -20,6 +20,10 @@ export KUBE_PS1_SYMBOL_ENABLE=false
 export KUBE_PS1_PREFIX='<'
 export KUBE_PS1_SUFFIX='>'
 
+# starship
+export STARSHIP_CONFIG=~/.starship
+eval "$(starship init bash)"
+
 # use hub aliased as git
 eval "$(hub alias -s)"
 

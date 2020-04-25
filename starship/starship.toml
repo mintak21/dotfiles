@@ -1,0 +1,167 @@
+# Starship is the minimal, blazing-fast, and infinitely customizable prompt for any shell.
+# See References https://starship.rs/config/
+# Use Terminal App iterm2, you can use default terminal.app but may garble pictograph
+
+#######################
+# Prompt Options
+#######################
+# Add a new line before the start of the prompt / default true
+add_newline = true
+# Configure the order in which the prompt module occurs
+prompt_order = [
+  "username",
+  "hostname",
+  "directory",
+  "git_branch",
+  "git_commit",
+  "git_status",
+  "kubernetes",
+  "terraform",
+  "cmd_duration",
+  "time",
+  "battery",
+  "line_break",
+  "character",
+]
+
+
+#######################
+# Module Settings
+#######################
+[battery]
+full_symbol = "🔋"
+charging_symbol = "⚡️"
+discharging_symbol = "⚠️  "
+
+# when battery capacity is between 0% and 10%, then display "bold italic red" style means 'CAUTION'
+# when battery capacity is between 10% and 25%, then display "italic yellow" style means 'warning'
+# else display "green"
+[[battery.display]]
+threshold = 10
+style = "bold italic red"
+[[battery.display]]
+threshold = 25
+style = "italic yellow"
+[[battery.display]]
+threshold = 100
+style = "green"
+
+[character]
+symbol = "$"                              # The symbol used before the text input in the prompt
+error_symbol = "✗"
+use_symbol_for_status = true              # Indicate error status by changing the symbol / default false
+style_success = "green"
+style_failure = "red"
+
+[cmd_duration]
+# Display how long the last command took to execute if took time over min_time
+min_time = 30_000
+prefix = "cmd took "
+style = "bold underline bright-yellow"
+
+[directory]
+truncation_length = 5         # The number of parent folders that the current directory should be truncated to / default 3
+truncate_to_repo = false      # Whether or not to truncate to the root of the git repo that you're currently in / default true
+style = "bold bright-yellow"
+
+[git_branch]
+symbol = ""
+truncation_symbol = "..."
+style = "underline #ff4500"  # orangered
+
+[git_commit]
+disabled = false
+commit_hash_length = 8
+style = "#ff1493"  # deeppink
+
+[git_status]
+disabled = true
+conflicted = "🏳"
+ahead = "🏎💨"
+behind = "😰"
+diverged = "😵"
+untracked = "🤷‍"
+stashed = "📦"
+modified = "📝"
+staged.value = "++"
+staged.style = "green"
+staged_count.enabled = true
+staged_count.style = "green"
+renamed = "👅"
+deleted = "🗑"
+
+[hostname]
+# shows hostname only when connected to an SSH session
+ssh_only = true
+prefix = "⟪"
+suffix = "⟫"
+style = "bold dimmed green"
+
+[kubernetes]
+disabled = false
+symbol = "☸"
+style = "bold #1e90ff"  # dodgerblue
+
+[line_break]
+disabled = false
+
+[terraform]
+disabled = false
+show_version = false
+style = "#ff00ff"  # fuchsia
+
+[time]
+disabled = false
+format = "%F %T"
+style = "#40e0d0" # turquoise
+
+[username]
+disabled = false
+show_always = false
+style_root = "bold italic red"
+
+# Disabled modules
+[conda]
+disabled = true
+[crystal]
+disabled = true
+[docker_context]
+disabled = true
+[dotnet]
+disabled = true
+[elixir]
+disabled = true
+[elm]
+disabled = true
+[env_var]
+disabled = true
+[golang]
+disabled = true
+[haskell]
+disabled = true
+[java]
+disabled = true
+[jobs]
+disabled = true
+[julia]
+disabled = true
+[memory_usage]
+disabled = true
+[hg_branch]
+disabled = true
+[nix_shell]
+disabled = true
+[nodejs]
+disabled = true
+[package]
+disabled = true
+[php]
+disabled = true
+[python]
+disabled = true
+[ruby]
+disabled = true
+[rust]
+disabled = true
+[singularity]
+disabled = true

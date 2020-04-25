@@ -23,6 +23,7 @@ function deploy_basic() {
   ln -fnsv $HOME/${dirName}/bash/.bashrc $HOME/.bashrc             # bashrc
   ln -fnsv $HOME/${dirName}/bash/.bash_profile $HOME/.bash_profile # bash_profile
   ln -fnsv $HOME/${dirName}/vim/.vimrc $HOME/.vimrc                # vim
+  ln -fnsv $HOME/${dirName}/starship/starship.toml $HOME/.starship # starship
 
   printf '\033[36m%s\033[m\n' 'end deploy basic'
 }
