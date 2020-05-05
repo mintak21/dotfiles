@@ -63,12 +63,13 @@ alias fda='fd --hidden --case-sensitive'
 # infrastructure
 alias d='docker'
 alias dc='docker-compose'
-alias k='kubectl'
+alias kc='kubectl'
 alias kx='kubectx'
+alias k9='k9s --readonly -c dp'
 alias tf='terraform'
 complete -o default -F _docker d
 complete -o default -F _docker_compose dc
-complete -o default -F __start_kubectl k
+complete -o default -F __start_kubectl kc
 complete -o default -F _kube_contexts kx
 if type terraform &> /dev/null; then
   complete -C terraform tf

@@ -53,6 +53,7 @@ brew "kind" # Kubernetes in Docker
 brew "helm"
 brew "kustomize"
 brew "skaffold"
+brew "derailed/k9s/k9s"
 
 # ansible
 brew "ansible"
