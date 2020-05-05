@@ -73,6 +73,3 @@ complete -o default -F _kube_contexts kx
 if type terraform &> /dev/null; then
   complete -C terraform tf
 fi
-
-# others
-alias starship_on='eval "$(starship init bash)"'
