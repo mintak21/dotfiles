@@ -22,7 +22,7 @@ export KUBE_PS1_SUFFIX='>'
 
 # starship
 export STARSHIP_CONFIG=~/.starship
-eval "$(starship init bash)"
+#eval "$(starship init bash)" # iTerm2特化設定なので、エイリアスで手動ONの運用とする
 
 # use hub aliased as git
 eval "$(hub alias -s)"

@@ -53,7 +53,7 @@ fi
 # alias(for Mac)
 alias brew="env PATH=/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin brew" # anacondaなど余計なものを読み込まない
 
-# basicなエイリアス
+# basic
 alias ll='exa -lhF --created --modified --sort=type --time-style=long-iso --git --color-scale'
 alias la='exa -alhF --created --modified --sort=type --time-style=long-iso --git --color-scale'
 alias lar='exa -alhRF --color-scale'
@@ -73,3 +73,6 @@ complete -o default -F _kube_contexts kx
 if type terraform &> /dev/null; then
   complete -C terraform tf
 fi
+
+# others
+alias starship_on='eval "$(starship init bash)"'
