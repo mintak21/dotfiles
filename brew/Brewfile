@@ -60,6 +60,7 @@ brew "ansible"
 
 # terraform
 brew "tfenv"
+brew "terragrunt"
 
 # cloud
 cask "google-cloud-sdk"
