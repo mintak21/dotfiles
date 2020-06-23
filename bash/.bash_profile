@@ -20,6 +20,9 @@ export KUBE_PS1_SYMBOL_ENABLE=false
 export KUBE_PS1_PREFIX='<'
 export KUBE_PS1_SUFFIX='>'
 
+# aws profile settings
+export AWS_PROFILE=mintak-terraform
+
 # starship
 export STARSHIP_CONFIG=~/.starship
 eval "$(starship init bash)"
@@ -33,6 +36,11 @@ source ~/.bashrc
 # load google-cloud
 source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc"
 source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc"
+
+# load pokemon skin
+if type pokemon &> /dev/null; then
+  pokemon Umbreon
+fi
 
 # load completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
