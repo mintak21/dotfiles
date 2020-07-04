@@ -60,7 +60,7 @@ brew "ansible"
 
 # terraform
 brew "tfenv"
-brew "terragrunt"
+# brew "terragrunt" automatic install specific terraform version
 
 # cloud
 cask "google-cloud-sdk"
