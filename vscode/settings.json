@@ -68,4 +68,5 @@
   "vsicons.dontShowNewVersionMessage": true,
   "editor.renderWhitespace": "all",
   "todo-tree.tree.showScanModeButton": false,
+  "editor.formatOnSave": true,
 }
