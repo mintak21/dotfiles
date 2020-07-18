@@ -13,10 +13,13 @@ tap "sanemat/font" # For Ricty
 brew "bash-completion"
 brew "bat"
 brew "gcc"
+brew "zoxide"
 brew "exa"
 brew "fd"
 brew "starship"
 brew "ripgrep"
+brew "procs"
+brew "bandwhich"
 brew "cjbassi/ytop/ytop"
 cask "iterm2"
 
@@ -61,11 +64,12 @@ brew "ansible"
 # terraform
 brew "tfenv"
 brew "tflint"
-# brew "terragrunt" automatic install specific terraform version
+# brew "terragrunt"  # automatic install specific terraform version
 
 # cloud
 cask "google-cloud-sdk"
 brew "awscli"
+cask "aws-vault"
 
 # vagrant
 cask "vagrant"
