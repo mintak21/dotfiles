@@ -15,6 +15,7 @@ prompt_order = [
   "git_branch",
   "git_commit",
   "git_status",
+  "aws",
   "kubernetes",
   "terraform",
   "cmd_duration",
@@ -28,6 +29,16 @@ prompt_order = [
 #######################
 # Module Settings
 #######################
+[aws]
+disabled = false
+symbol = "🅰 "
+style = "bold blue"
+displayed_items = "all"
+
+[aws.region_aliases]
+ap-northeast-1 = "Tokyo"
+ap-northeast-2 = "Osaka"
+
 [battery]
 full_symbol = "🔋"
 charging_symbol = "⚡️"
