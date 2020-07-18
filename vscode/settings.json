@@ -1,53 +1,75 @@
 {
   "workbench.iconTheme": "vscode-icons",
-  "window.zoomLevel": -1,               // 全体ウィンドウ
+  "window.zoomLevel": -1, // 全体ウィンドウ
   // file
-  "files.autoSave": "afterDelay",       // 自動保存ポリシー
-  "files.autoSaveDelay": 5000,          // 5秒後に自動保存
-  "files.insertFinalNewline": true,     // 最終行に空行を挿入
+  "files.autoSave": "afterDelay", // 自動保存ポリシー
+  "files.autoSaveDelay": 5000, // 5秒後に自動保存
+  "files.insertFinalNewline": true, // 最終行に空行を挿入
   // editor
-  "editor.fontSize": 18,                // 文字サイズ
+  "editor.fontSize": 18, // 文字サイズ
   "editor.renderControlCharacters": true,
-  "editor.wordWrap": "on",              // 1行が長い場合、折り返す
-  "editor.detectIndentation": false,    // タブサイズの自動推定を行わない
-  "editor.tabSize": 2,                  // タブスペース=2
-  "editor.minimap.enabled": false,      // ミニマップ無表示
+  "editor.wordWrap": "on", // 1行が長い場合、折り返す
+  "editor.detectIndentation": false, // タブサイズの自動推定を行わない
+  "editor.tabSize": 2, // タブスペース=2
+  "editor.minimap.enabled": false, // ミニマップ無表示
   // Fonts
   "editor.fontFamily": "Ricty, 'Ricty Diminished', Menlo, Monaco, 'Courier New', monospace",
-  "debug.console.fontSize": 16,         // デバッグコンソールのフォントサイズ
-  "terminal.integrated.fontSize": 16,   // ターミナルのフォントサイズ
-  "markdown.preview.fontSize": 16,      // MarkDownプレビューのフォントサイズ
-  "rest-client.fontSize": 16,           // 拡張機能RestClientのフォントサイズ
+  "debug.console.fontSize": 16, // デバッグコンソールのフォントサイズ
+  "terminal.integrated.fontSize": 16, // ターミナルのフォントサイズ
+  "markdown.preview.fontSize": 16, // MarkDownプレビューのフォントサイズ
+  "rest-client.fontSize": 16, // 拡張機能RestClientのフォントサイズ
   // python
   "python.dataScience.sendSelectionToInteractiveWindow": false,
-  "python.linting.lintOnSave": true,            // 保存時自動lint
-  "python.linting.pylintEnabled": false,        // pylint:Off
-  "python.linting.pycodestyleEnabled": false,   // pycodeStyle:Off
-  "python.linting.flake8Enabled": true,         // lintにはflake8を使用
-  "python.linting.flake8Args": [                // flake8の引数
+  "python.linting.lintOnSave": true, // 保存時自動lint
+  "python.linting.pylintEnabled": false, // pylint:Off
+  "python.linting.pycodestyleEnabled": false, // pycodeStyle:Off
+  "python.linting.flake8Enabled": true, // lintにはflake8を使用
+  "python.linting.flake8Args": [ // flake8の引数
     "--ignore=E221, W293, W504", // allow Multiple space
     "--max-line-length=150",
     "--max-complexity=20"
   ],
-  "python.formatting.provider": "autopep8",     // formatterにはautopep8を使用
-  "python.formatting.autopep8Args": [           // autopep8の引数
-    "--aggressive", "--aggressive",
+  "python.formatting.provider": "autopep8", // formatterにはautopep8を使用
+  "python.formatting.autopep8Args": [ // autopep8の引数
+    "--aggressive",
+    "--aggressive",
   ],
-  "autoDocstring.docstringFormat": "google",    // docstringのデフォルトフォーマット
+  "autoDocstring.docstringFormat": "google", // docstringのデフォルトフォーマット
   "[python]": {
     "editor.tabSize": 4,
-    "editor.formatOnSave": true,              // 保存時に自動整形を行う
-    "editor.formatOnPaste": false,            // ペースト時に自動整形を行わない
-    "editor.formatOnType": false,             // 入力後に自動整形を行わない
+    "editor.formatOnSave": true, // 保存時に自動整形を行う
+    "editor.formatOnPaste": false, // ペースト時に自動整形を行わない
+    "editor.formatOnType": false, // 入力後に自動整形を行わない
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true          // 保存時import整理
+      "source.organizeImports": true // 保存時import整理
     },
   },
   // go
-  "go.formatTool": "goimports",   // goimportでformat
+  "go.formatTool": "goimports", // goimportでformat
   "go.useLanguageServer": true,
+  "go.installDependenciesWhenBuilding": false,
+  "go.autocompleteUnimportedPackages": true,
   "[go]": {
-    "editor.tabSize": 4,          // goのインデントは4
+    "editor.tabSize": 4, // goのインデントは4
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": false
+    },
+  },
+  // "go.toolsEnvVars": {
+  //   "GO111MODULE": "on",
+  // },
+  "go.languageServerExperimentalFeatures": {
+    "autoComplete": true,
+    "documentSymbols": true,
+    "findReferences": true,
+    "format": false,
+    "goToDefinition": true,
+    "goToTypeDefinition": true,
+    "hover": true,
+    "signatureHelp": true,
+    "rename": true,
+    "workspaceSymbols": true,
+    "diagnostics": true, // for diagnostics as you type
   },
   // ruby
   "[ruby]": {
@@ -69,4 +91,5 @@
   "editor.renderWhitespace": "all",
   "todo-tree.tree.showScanModeButton": false,
   "editor.formatOnSave": true,
+  "explorer.confirmDelete": false,
 }
