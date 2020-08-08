@@ -32,12 +32,14 @@ prompt_order = [
 [aws]
 disabled = false
 symbol = "🅰 "
-style = "bold blue"
+style = "#228b22" # forestgreen
 displayed_items = "all"
 
 [aws.region_aliases]
 ap-northeast-1 = "Tokyo"
 ap-northeast-2 = "Osaka"
+us-east-1 = "Virginia"
+us-west-2 = "Oregon"
 
 [battery]
 full_symbol = "🔋"

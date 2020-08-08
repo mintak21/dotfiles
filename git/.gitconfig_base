@@ -53,5 +53,7 @@
   # see https://qiita.com/awakia/items/6aaea1ffecba725be601
 [diff]
   algorithm = histogram
+[pull]
+	rebase = false
 
 # see https://blog.katsubemakito.net/git/git-config-1st 

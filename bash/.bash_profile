@@ -5,7 +5,7 @@ eval "$(goenv init -)"
 export PATH="$PATH:$GOPATH/bin"
 
 # Ruby env
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+if which rbenv >/dev/null; then eval "$(rbenv init -)"; fi
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
@@ -38,7 +38,7 @@ source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.
 source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc"
 
 # load pokemon skin
-if type pokemon &> /dev/null; then
+if type pokemon &>/dev/null; then
   pokemon Umbreon
 fi
 
@@ -46,4 +46,3 @@ fi
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
-
