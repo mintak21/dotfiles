@@ -26,14 +26,14 @@ function install_fonts() {
 function install_vscode_extensions() {
   # VSCode拡張機能インストール
   printf '\033[91m%s\033[m\n' 'start install vscode extensions'
-  cat ./vscode/extensions | while read line; do
-    code --install-extension ${line}
+  cat ../vscode/extensions | awk -F "," '{print $1}' | grep -v '^\s*$' | grep -v '^\s*#' | while read extension; do
+    code --install-extension ${extension}
   done
   printf '\033[36m%s\033[m\n' 'end install vscode extensions'
 }
 
 cd $(dirname $0)
-xcode-select --install # これが入っていないと失敗するパッケージがある
-install_brew_formulas
+# xcode-select --install # これが入っていないと失敗するパッケージがある
+# install_brew_formulas
 install_vscode_extensions
-install_fonts
+# install_fonts
