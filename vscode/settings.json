@@ -92,4 +92,5 @@
   "todo-tree.tree.showScanModeButton": false,
   "editor.formatOnSave": true,
   "explorer.confirmDelete": false,
+  "tabnine.experimentalAutoImports": true,
 }

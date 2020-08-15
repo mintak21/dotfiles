@@ -1,25 +1,47 @@
-MS-CEINTL.vscode-language-pack-ja
-vscode-icons-team.vscode-icons
-christian-kohler.path-intellisense
-davidhouchin.whitespace-plus
-CoenraadS.bracket-pair-colorizer
-mechatroner.rainbow-csv
-ryu1kn.partial-diff
-shardulm94.trailing-spaces
-emilast.LogFileHighlighter
-donjayamanne.githistory
-eamodio.gitlens
-ms-vscode.Go
-rebornix.ruby
-ms-python.python
-njpwerner.autodocstring
-himanoa.python-autopep8
-freakypie.code-python-isort
-xabikos.javascriptsnippets
-ms-azuretools.vscode-docker
-william-voyek.vscode-nginx
-Gruntfuggly.todo-tree
-humao.rest-client
-hashicorp.terraform
-redhat.vscode-yaml
+# 拡張機能のKey,名称,拡張機能概要
+# Basic
+CoenraadS.bracket-pair-colorizer,Bracket Pair Colorizer,かぎかっこの対応が色でわかりやすくなる
+Gruntfuggly.todo-tree,Todo Tree,TODOとFIXMEの管理
+IBM.output-colorizer,Output Colorizer,出力タブの着色
+MS-CEINTL.vscode-language-pack-ja,Japanese Language Pack for Visual Studio Code,VSCode日本語化パック
+christian-kohler.path-intellisense,Path Intellisense,パスの入力支援
+mechatroner.rainbow-csv,Rainbow CSV,CSVを幸せな気持ちで見るツール
+ryu1kn.partial-diff,Partial Diff,選択部分比較のできるツール
+shardulm94.trailing-spaces,Trailing Spaces,行末不要スペースの可視化
+streetsidesoftware.code-spell-checker,Code Spell Checker,スペルチェッカー
+oderwat.indent-rainbow,indent-rainbow,インデント可視化
+vscode-icons-team.vscode-icons,vscode-icons,アイコンビジュアライザ
 
+# git
+donjayamanne.githistory,Git History,Gitコミット履歴のビューワ
+eamodio.gitlens,GitLens,コミッター表示やコミット単位でのファイル比較ツール
+GitHub.vscode-pull-request-github,GitHub Pull Requests and Issues,GithubPRをVsCodeで扱う
+
+# Viewer
+Arjun.swagger-viewer,Swagger Viewer,Swaggerドキュメントビューワ
+chrmarti.regex,Regex Previwer,正規表現チェッカー
+hediet.vscode-drawio,Draw io Integration,Drawioドキュメントビューワ
+jebbs.plantuml,PlantUML,PlantUMLビューワ
+ms-azuretools.vscode-docker,Docker,VSCode上でDockerを扱う
+
+# Languages Support
+golang.go,Go,Golangサポート
+hashicorp.terraform,Hashicorp Terraform,Terraformサポート
+ms-python.python,Python,Pythonサポート
+rebornix.ruby,Ruby,Rubyサポート
+redhat.vscode-yaml,YAML,YAMLサポート
+zxh404.vscode-proto3,vscode-proto3,Protoサポート
+
+# Linter / Formatter
+bungcip.better-toml,Better Toml,Tomlファイルのフォーマッタ
+erd0s.terraform-autocomplete,Terraform Autocomplete,AWS系リソースの自動補完
+foxundermoon.shell-format,shell-format,シェルファイルのフォーマッタ
+freakypie.code-python-isort,code-python-isort,Python isort
+himanoa.Python-autopep8,Python-autopep8,pep8自動化
+njpwerner.autodocstring,Python Docstring Generator,Pythonのdocstring補完
+securisec.github-actions,github-actions,githubActionsワークフローファイルフォーマッタ
+william-voyek.vscode-nginx,Nginx Configuration,Nginx設定ファイルフォーマッタ
+
+# Completion
+TabNine.tabnine-vscode,TabNine,AIによる入力補完（全言語対応）
+ms-python.vscode-pylance,Pylance,Python入力補完
