@@ -33,7 +33,7 @@ function install_vscode_extensions() {
 }
 
 cd $(dirname $0)
-# xcode-select --install # これが入っていないと失敗するパッケージがある
-# install_brew_formulas
+xcode-select --install # これが入っていないと失敗するパッケージがある
+install_brew_formulas
 install_vscode_extensions
-# install_fonts
+install_fonts
