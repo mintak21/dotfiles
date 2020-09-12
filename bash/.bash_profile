@@ -23,6 +23,9 @@ export KUBE_PS1_SUFFIX='>'
 # aws profile settings
 export AWS_PROFILE=mintak-terraform
 
+# gcp credentials
+export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.gcp/accounts.json"
+
 # starship
 export STARSHIP_CONFIG=~/.starship
 eval "$(starship init bash)"
