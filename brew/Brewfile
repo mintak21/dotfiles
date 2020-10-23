@@ -59,6 +59,7 @@ brew "kustomize"
 brew "skaffold"
 brew "derailed/k9s/k9s"
 brew "tektoncd/tools/tektoncd-cli"
+cask "lens"
 
 # ansible
 brew "ansible"
