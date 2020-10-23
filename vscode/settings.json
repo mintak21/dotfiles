@@ -26,7 +26,7 @@
   "python.linting.flake8Enabled": true, // lintにはflake8を使用
   "python.linting.flake8Args": [ // flake8の引数
     "--ignore=E221, W293, W504", // allow Multiple space
-    "--max-line-length=150",
+    "--max-line-length=200",
     "--max-complexity=20"
   ],
   "python.formatting.provider": "autopep8", // formatterにはautopep8を使用
@@ -101,5 +101,6 @@
   "tabnine.experimentalAutoImports": true,
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-  }
+  },
+  "git.suggestSmartCommit": false
 }
