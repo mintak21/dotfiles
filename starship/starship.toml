@@ -6,13 +6,13 @@
 # Prompt Options
 #######################
 add_newline = true
-format = """$username$hostname$directory$git_branch$git_status$aws$kubernetes$cmd_duration$time$battery$line_break$character"""
+format = """$username$hostname$directory$git_branch$gcloud$aws$kubernetes$cmd_duration$time$battery$line_break$character"""
 
 #######################
 # Module Settings
 #######################
 [aws]
-disabled = false
+format = '[$symbol$profile(\($region\))]($style) '
 symbol = "🅰 "
 style = "#228b22" # forestgreen
 displayed_items = "all"
@@ -43,10 +43,7 @@ style = "green"
 
 [character]
 success_symbol = "[>](bold green)"                              # The symbol used before the text input in the prompt
-error_symbol = "[✗](bold red)"
-use_symbol_for_status = true              # Indicate error status by changing the symbol / default false
-style_success = "green"
-style_failure = "red"
+error_symbol = "[>](bold red)"
 
 [cmd_duration]
 # Display how long the last command took to execute if took time over min_time
@@ -59,7 +56,12 @@ truncation_length = 5         # The number of parent folders that the current di
 truncate_to_repo = false      # Whether or not to truncate to the root of the git repo that you're currently in / default true
 style = "bold bright-yellow"
 
+[gcloud]
+format = '[$symbol$account(\($project\))]($style) '
+style = "#1e90ff" # dodgerblue
+
 [git_branch]
+format = '[$symbol$branch]($style) '
 symbol = ""
 truncation_symbol = "..."
 style = "underline #ff4500"  # orangered
@@ -93,17 +95,12 @@ style = "bold dimmed green"
 
 [kubernetes]
 disabled = false
-format = 'in [$symbol$context( \($namespace\))]($style) '
+format = '[$symbol$context( \($namespace\))]($style) '
 symbol = "☸"
-style = "bold #1e90ff"  # dodgerblue
+style = "#ff00ff"  # fuchsia
 
 [line_break]
 disabled = false
-
-[terraform]
-disabled = false
-show_version = false
-style = "#ff00ff"  # fuchsia
 
 [time]
 disabled = false
@@ -116,6 +113,10 @@ show_always = false
 style_root = "bold italic red"
 
 # Disabled modules
+[terraform]
+disabled = true
+show_version = false
+style = "#ff00ff"  # fuchsia
 [conda]
 disabled = true
 [crystal]
