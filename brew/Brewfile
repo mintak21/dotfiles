@@ -56,6 +56,7 @@ brew "stern"
 brew "kind" # Kubernetes in Docker
 brew "helm"
 brew "kustomize"
+brew "kubeseal" # https://github.com/bitnami-labs/sealed-secrets
 brew "skaffold"
 brew "derailed/k9s/k9s"
 brew "tektoncd/tools/tektoncd-cli"
