@@ -7,6 +7,7 @@ tap "homebrew/core"
 tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
+tap "hashicorp/tap" # for waypoint
 tap "sanemat/font" # For Ricty
 
 # Terminal
@@ -69,6 +70,7 @@ brew "ansible"
 # terraform
 brew "tfenv"
 brew "tflint"
+brew "hashicorp/tap/waypoint" # https://www.waypointproject.io/docs/intro
 # brew "terragrunt"  # automatic install specific terraform version
 
 # cloud
