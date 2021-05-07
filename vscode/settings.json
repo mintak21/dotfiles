@@ -17,9 +17,7 @@
   "debug.console.fontSize": 16, // デバッグコンソールのフォントサイズ
   "terminal.integrated.fontSize": 16, // ターミナルのフォントサイズ
   "markdown.preview.fontSize": 16, // MarkDownプレビューのフォントサイズ
-  "rest-client.fontSize": 16, // 拡張機能RestClientのフォントサイズ
-  // python
-  "python.dataScience.sendSelectionToInteractiveWindow": false,
+  "rest-client.fontSize": 16,
   "python.linting.lintOnSave": true, // 保存時自動lint
   "python.linting.pylintEnabled": false, // pylint:Off
   "python.linting.pycodestyleEnabled": false, // pycodeStyle:Off
@@ -102,5 +100,9 @@
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
-  "git.suggestSmartCommit": false
+  "git.suggestSmartCommit": false,
+  "[nginx]": {
+    "editor.defaultFormatter": "raynigon.nginx-formatter"
+},
+"jupyter.sendSelectionToInteractiveWindow": false
 }
