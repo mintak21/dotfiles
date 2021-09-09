@@ -8,7 +8,8 @@ tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "hashicorp/tap" # for waypoint
-tap "sanemat/font" # For Ricty
+tap "sanemat/font" # for Ricty
+tap "yoheimuta/protolint" # for protolint
 
 # Terminal
 brew "bash-completion"
@@ -22,6 +23,7 @@ brew "starship"
 brew "ripgrep"
 brew "procs"
 brew "bandwhich"
+brew "grpcurl"
 brew "cjbassi/ytop/ytop"
 cask "iterm2"
 
@@ -29,6 +31,7 @@ cask "iterm2"
 brew "goenv", args: ['HEAD']
 brew "rbenv", args: ['HEAD']
 brew "pyenv", args: ['HEAD']
+brew "protolint"
 
 # Programming Fonts
 brew "ricty"
@@ -41,9 +44,7 @@ cask "postico"
 # Git
 brew "hub"
 brew "git"
-brew "gist"
 brew "tig"
-cask "github"
 
 # Docker
 cask "docker" # Docker for Mac
@@ -59,7 +60,7 @@ brew "helm"
 brew "kustomize"
 brew "kubeseal" # https://github.com/bitnami-labs/sealed-secrets
 brew "kubevela" # https://github.com/oam-dev/kubevela
-brew "skaffold"
+# brew "skaffold"
 brew "derailed/k9s/k9s"
 brew "tektoncd/tools/tektoncd-cli"
 cask "lens"
