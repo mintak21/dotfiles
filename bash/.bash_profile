@@ -1,8 +1,10 @@
 # GOPATH
 export GOPATH="$HOME/go"
 export GOENV_ROOT="$HOME/.goenv"
-eval "$(goenv init -)"
+export PATH="$GOENV_ROOT/bin:$PATH"
 export PATH="$PATH:$GOPATH/bin"
+export PATH="$PATH:$GOROOT/bin"
+eval "$(goenv init -)"
 
 # Ruby env
 if which rbenv >/dev/null; then eval "$(rbenv init -)"; fi
@@ -24,7 +26,8 @@ export KUBE_PS1_SUFFIX='>'
 export AWS_PROFILE=mintak-terraform
 
 # gcp credentials
-export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.gcp/accounts.json"
+#export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.gcp/accounts.json"
+export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.config/gcloud/legacy_credentials/mintak21@gmail.com/adc.json"
 
 # starship
 export STARSHIP_CONFIG=~/.starship
