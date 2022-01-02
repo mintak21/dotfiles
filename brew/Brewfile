@@ -47,7 +47,7 @@ brew "git"
 brew "tig"
 
 # Docker
-cask "docker" # Docker for Mac
+brew "docker"
 
 # k8s
 brew "kubernetes-cli"
