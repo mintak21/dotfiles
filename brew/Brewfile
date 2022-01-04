@@ -29,7 +29,7 @@ cask "iterm2"
 
 # Programming Languages
 brew "goenv", args: ['HEAD']
-brew "rbenv", args: ['HEAD']
+# brew "rbenv", args: ['HEAD']
 brew "pyenv", args: ['HEAD']
 brew "protolint"
 
@@ -42,7 +42,8 @@ brew "postgresql"
 cask "postico"
 
 # Git
-brew "hub"
+brew "gh"
+brew "ghq"
 brew "git"
 brew "tig"
 
@@ -71,7 +72,7 @@ brew "ansible"
 # terraform
 brew "tfenv"
 brew "tflint"
-brew "hashicorp/tap/waypoint" # https://www.waypointproject.io/docs/intro
+# brew "hashicorp/tap/waypoint" # https://www.waypointproject.io/docs/intro
 # brew "terragrunt"  # automatic install specific terraform version
 
 # cloud
