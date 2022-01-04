@@ -70,7 +70,6 @@ alias tf='terraform'
 alias p='podman'
 
 # auto complete
-podman completion -f /usr/local/etc/bash_completion.d/podman bash
 complete -o default -F _docker d
 complete -o default -F _docker_compose dc
 complete -o default -F __start_kubectl kc
