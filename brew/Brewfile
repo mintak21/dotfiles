@@ -50,6 +50,7 @@ brew "tig"
 
 # Docker
 brew "docker"
+brew "podman"
 
 # k8s
 brew "kubernetes-cli"
