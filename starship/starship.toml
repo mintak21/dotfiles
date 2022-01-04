@@ -61,7 +61,7 @@ style = "#1e90ff" # dodgerblue
 
 [git_branch]
 format = '[$symbol$branch]($style) '
-symbol = "♦️ "
+symbol = ""
 truncation_symbol = "..."
 style = "underline #ff4500"  # orangered
 
