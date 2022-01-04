@@ -7,7 +7,7 @@ tap "homebrew/core"
 tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
-tap "hashicorp/tap" # for waypoint
+# tap "hashicorp/tap" # for waypoint
 tap "sanemat/font" # for Ricty
 tap "yoheimuta/protolint" # for protolint
 
