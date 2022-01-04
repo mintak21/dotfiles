@@ -64,7 +64,7 @@ brew "kubeseal" # https://github.com/bitnami-labs/sealed-secrets
 brew "kubevela" # https://github.com/oam-dev/kubevela
 # brew "skaffold"
 brew "derailed/k9s/k9s"
-brew "tektoncd/tools/tektoncd-cli"
+brew "tektoncd-cli"
 cask "lens"
 
 # ansible
