@@ -51,6 +51,7 @@ brew "tig"
 # Docker
 brew "docker"
 brew "podman"
+brew "lazydocker"
 
 # k8s
 brew "kubernetes-cli"
