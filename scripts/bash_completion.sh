@@ -27,4 +27,4 @@ curl -L https://raw.githubusercontent.com/hashicorp/vagrant/v$(vagrant -v | awk 
 complete -C '$(brew --prefix)/bin/aws_completer' aws
 
 # podman
-podman completion -f /usr/local/etc/bash_completion.d/podman bash
+podman completion -f $(brew --prefix)/etc/bash_completion.d/podman bash
