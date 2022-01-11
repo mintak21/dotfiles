@@ -33,6 +33,7 @@ install_vscode_extensions() {
 }
 
 install_compose_cli() {
+  # See. https://docs.docker.com/compose/cli-command/
   curl -fL https://raw.githubusercontent.com/docker/compose-cli/main/scripts/install/install_linux.sh | sh
 }
 

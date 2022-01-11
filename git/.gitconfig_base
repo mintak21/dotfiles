@@ -10,8 +10,11 @@
 [color]
   ui = auto
 [alias]
-  co = checkout
-  cob = checkout -b # <new_branch> ブランチ作成用
+  ; co = checkout
+  ; cob = checkout -b # <new_branch> ブランチ作成用
+  s = switch
+  sc = switch --create # <new_branch> ブランチ作成用
+  sb = switch - # 1つ前のブランチに戻る
   ct = commit -m # <comment>
   act = commit -am # <comment> ステージングとコミットを同時
   st = status
@@ -40,10 +43,10 @@
   ffl = flow feature -v # featureブランチ一覧を詳細表示
   ffs = flow feature start # [-F] <name> [<base_branch>] / featureブランチを作成してブランチをスイッチ -F:originからfetch, <name>=ブランチ名,<base_branch>=派生元ブランチ、デフォルトはdevelop
   ffin = flow feature finish # <name> / いまいるfeatureブランチを<name>ブランチにマージ これを使うと開発者がマージしてdevelopブランチをpushすることとなる(ふつうはレビュワーがpullRequestにてマージするはず)
-           # option -r=マージでなくrebaseとする / -k featureブランチを削除しない
+  # option -r=マージでなくrebaseとする / -k featureブランチを削除しない
   ffp = flow feature publish # <name> /  featureブランチを変更内容をpush git push origin feature/<name>と同等
 [commit]
-  template = $HOME/dotfiles/git/.commit_template 
+  template = $HOME/dotfiles/git/.commit_template
 [gui]
   encoding = utf-8
 [push]
@@ -56,4 +59,4 @@
 [pull]
 	rebase = true
 
-# see https://blog.katsubemakito.net/git/git-config-1st 
+# see https://blog.katsubemakito.net/git/git-config-1st
