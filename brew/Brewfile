@@ -12,6 +12,7 @@ tap "sanemat/font" # for Ricty
 tap "yoheimuta/protolint" # for protolint
 
 # Terminal
+brew "aquaproj/aqua/aqua"
 brew "bash-completion"
 brew "bat"
 brew "fzf"
