@@ -58,5 +58,6 @@
   algorithm = histogram
 [pull]
 	rebase = true
-
+[url "git@github.com:"]
+	insteadOf = https://github.com/
 # see https://blog.katsubemakito.net/git/git-config-1st

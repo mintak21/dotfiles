@@ -2,14 +2,15 @@
 curl -L https://raw.githubusercontent.com/git/git/v$(git version | awk -F' ' '{print $3}')/contrib/completion/git-completion.bash >$(brew --prefix)/etc/bash_completion.d/git
 
 # Docker
-#curl -L https://raw.githubusercontent.com/docker/docker-ce/$(docker --version | awk -F' ' '{print $3}' | cut -c 1-5)/components/cli/contrib/completion/bash/docker > $(brew --prefix)/etc/bash_completion.d/docker
+curl -L https://raw.githubusercontent.com/docker/cli/v$(docker --version | awk -F' ' '{print $3}' | awk -F',' '{print $1}')/contrib/completion/bash/docker >$(brew --prefix)/etc/bash_completion.d/docker
 # docker-for-mac の持つcompletionにより補完
-ln -fnsv /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion $(brew --prefix)/etc/bash_completion.d/docker
+# ln -fnsv /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion $(brew --prefix)/etc/bash_completion.d/docker
 
 # docker-compose
-#curl -L https://raw.githubusercontent.com/docker/compose/$(docker-compose version --short)/contrib/completion/bash/docker-compose > $(brew --prefix)/etc/bash_completion.d/docker-compose
+# 不要
+# curl -L https://raw.githubusercontent.com/docker/compose/$(docker-compose version --short)/contrib/completion/bash/docker-compose >$(brew --prefix)/etc/bash_completion.d/docker-compose
 # docker-for-mac の持つcompletionにより補完
-ln -fnsv /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion $(brew --prefix)/etc/bash_completion.d/docker-compose
+# ln -fnsv /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion $(brew --prefix)/etc/bash_completion.d/docker-compose
 
 # kubectl
 kubectl completion bash >$(brew --prefix)/etc/bash_completion.d/kubectl
