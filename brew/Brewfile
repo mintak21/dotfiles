@@ -12,22 +12,21 @@ tap "sanemat/font" # for Ricty
 tap "yoheimuta/protolint" # for protolint
 
 # Terminal
-brew "aquaproj/aqua/aqua"
-brew "bash-completion"
 brew "bat"
 brew "fzf"
-brew "gcc"
-brew "zoxide"
 brew "exa"
 brew "fd"
 brew "jq"
-brew "starship"
+brew "grpcurl"
 brew "ripgrep"
+brew "starship"
+cask "iterm2"
+brew "bash-completion"
+
+brew "aquaproj/aqua/aqua"
 brew "procs"
 brew "bandwhich"
-brew "grpcurl"
 brew "cjbassi/ytop/ytop"
-cask "iterm2"
 
 # Programming Languages
 brew "goenv", args: ['HEAD']
@@ -56,19 +55,20 @@ brew "lazydocker"
 
 # k8s
 brew "kubernetes-cli"
-brew "kube-ps1"
 brew "kubectx"
-brew "kubespy"
+brew "kube-ps1"
 brew "stern"
-brew "kind" # Kubernetes in Docker
 brew "helm"
 brew "kustomize"
+brew "skaffold"
+cask "lens"
+
+brew "kind" # Kubernetes in Docker
 brew "kubeseal" # https://github.com/bitnami-labs/sealed-secrets
 brew "kubevela" # https://github.com/oam-dev/kubevela
-# brew "skaffold"
+brew "kubespy"
 brew "derailed/k9s/k9s"
 brew "tektoncd-cli"
-cask "lens"
 
 # ansible
 brew "ansible"
