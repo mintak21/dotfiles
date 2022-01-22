@@ -65,7 +65,7 @@ alias d='docker'
 alias dc='docker-compose'
 alias kc='kubectl'
 alias kx='kubectx'
-alias k9='k9s --readonly -c dp'
+alias k9s='k9s --readonly -c dp'
 alias tf='terraform'
 alias p='podman'
 
