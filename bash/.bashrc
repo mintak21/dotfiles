@@ -62,7 +62,6 @@ alias fda='fd --hidden --case-sensitive'
 
 # infrastructure
 alias d='docker'
-alias dc='docker-compose'
 alias kc='kubectl'
 alias kx='kubectx'
 alias k9s='k9s --readonly -c dp'
@@ -71,7 +70,6 @@ alias p='podman'
 
 # auto complete
 complete -o default -F _docker d
-complete -o default -F _docker_compose dc
 complete -o default -F __start_kubectl kc
 complete -o default -F _kube_contexts kx
 complete -o default -F __start_podman p
