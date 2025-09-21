@@ -9,3 +9,15 @@ ssh-keygen -t ed25519
 echo >> $HOME/.zprofile
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Install Packages
+brew bundle --global
+
+# Setup Packages
+volta install node
+volta install npm
+volta setup
+
+# Install Claude Code
+npm install -g @anthropic-ai/claude-code
+
