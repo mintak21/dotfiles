@@ -1,23 +1,17 @@
 #!/bin/bash
 
-# Create SSH Key
-ssh-keygen -t ed25519
+# Get user input
+read -p "Enter your Git user name: " git_user_name
+read -p "Enter your Git user email: " git_user_email
 
-# Install brew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# Create .gitconfig from .gitconfig_base
+sed -e "s/REP_NAME/$git_user_name/" -e "s/REP_EMAIL/$git_user_email/" .gitconfig_base > ~/.gitconfig
 
-echo >> $HOME/.zprofile
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# Copy .gitignore
+cp -f .gitignore ~/.gitignore
 
-# Install Packages
-brew bundle --global
+# copy .vimrc to ~/.vimrc
+cp -f vim/.vimrc ~/.vimrc
 
-# Setup Packages
-volta install node
-volta install npm
-volta setup
-
-# Install Claude Code
-npm install -g @anthropic-ai/claude-code
+echo "Git configuration complete."
 
