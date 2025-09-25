@@ -13,5 +13,9 @@ cp -f .gitignore ~/.gitignore
 # copy .vimrc to ~/.vimrc
 cp -f vim/.vimrc ~/.vimrc
 
+# copy .commit_template to HOME directory
+cp -f git/.commit_template ~/.commit_template
+
 echo "Git configuration complete."
+
 
