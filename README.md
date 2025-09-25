@@ -1,22 +1,25 @@
-## Dot Files Storehouse
+# Dotfiles
 
-1. clone repository to ${HOME}
+My personal dotfiles.
 
-```sh
-cd ~
-git clone git@github.com:mintak21/dotfiles.git
-```
+## Setup
 
-2. setup
+1.  Clone this repository:
 
-```sh
-# Create Dotfiles Symbolic link and install packages
-make deploy GIT_NAME={GIT_NAME} GIT_EMAIL={GIT_EMAIL}
-```
+    ```bash
+    git clone https://github.com/mintak21/dotfiles.git
+    ```
 
-3. cleanup
+2.  Navigate to the `dotfiles` directory:
 
-```sh
-make clean
-cd .. && rm -rf dotfiles
-```
+    ```bash
+    cd dotfiles
+    ```
+
+3.  Run the setup script:
+
+    ```bash
+    ./setup.sh
+    ```
+
+4.  The script will prompt you to enter your Git user name and email.
