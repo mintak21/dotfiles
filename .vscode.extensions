@@ -1,6 +1,5 @@
 # 拡張機能のKey,名称,拡張機能概要
 # Basic
-CoenraadS.bracket-pair-colorizer-2,Bracket Pair Colorizer 2,かぎかっこの対応が色でわかりやすくなる
 Gruntfuggly.todo-tree,Todo Tree,TODOとFIXMEの管理
 MS-CEINTL.vscode-language-pack-ja,Japanese Language Pack for Visual Studio Code,VSCode日本語化パック
 alefragnani.Bookmarks,Bookmarks,ブックマーク機能追加
@@ -28,21 +27,10 @@ ms-azuretools.vscode-docker,Docker,VSCode上でDockerを扱う
 golang.go,Go,Golangサポート
 hashicorp.terraform,Hashicorp Terraform,Terraformサポート
 ms-python.python,Python,Pythonサポート
-rebornix.ruby,Ruby,Rubyサポート
 redhat.vscode-yaml,YAML,YAMLサポート
-zxh404.vscode-proto3,vscode-proto3,Protoサポート
 
 # Linter / Formatter
-bungcip.better-toml,Better Toml,Tomlファイルのフォーマッタ
 davidanson.vscode-markdownlint,markdownlint,MarkdownのLinter
 erd0s.terraform-autocomplete,Terraform Autocomplete,AWS系リソースの自動補完
 foxundermoon.shell-format,shell-format,シェルファイルのフォーマッタ
-freakypie.code-python-isort,code-python-isort,Python isort
-himanoa.Python-autopep8,Python-autopep8,pep8自動化
-njpwerner.autodocstring,Python Docstring Generator,Pythonのdocstring補完
 securisec.github-actions,github-actions,githubActionsワークフローファイルフォーマッタ
-william-voyek.vscode-nginx,Nginx Configuration,Nginx設定ファイルフォーマッタ
-
-# Completion
-TabNine.tabnine-vscode,TabNine,AIによる入力補完（全言語対応）
-ms-python.vscode-pylance,Pylance,Python入力補完
