@@ -35,6 +35,7 @@ brew "k9s"
 brew "kind"
 brew "kubectx"
 brew "kustomize"
+brew "yooooooga/tap/zabrze"
 cask "obsidian"
 
 # Level: C
