@@ -20,7 +20,7 @@ cp -f .gitignore ~/.gitignore
 cp -f vim/.vimrc ~/.vimrc
 
 # copy .commit_template to HOME directory
-cp -f git/.commit_template ~/.commit_template
+cp -f .commit_template ~/.commit_template
 
 # copy starship.toml to HOME directory
 cp -f .starship.toml ~/.config/starship.toml
