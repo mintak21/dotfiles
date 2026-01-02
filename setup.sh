@@ -16,15 +16,20 @@ cp -f vim/.vimrc ~/.vimrc
 # copy .commit_template to HOME directory
 cp -f git/.commit_template ~/.commit_template
 
-echo "Git configuration complete."
+# copy starship.toml to HOME directory
+cp -f .starship.toml ~/.config/starship.toml
 
+# copy ghostty to HOME directory
+cp -rf .ghostty ~/.config/ghostty
+
+# Already migrate to Ghostty
 # setup warp theme
-mkdir -p $HOME/.warp
-cd $HOME/.warp/
-git clone https://github.com/warpdotdev/themes.git
-mkdir -p $HOME/.warp/themes/custom
-cp -rf .warp/themes/custom/ $HOME/.warp/themes/custom/
-echo "Warp theme setup complete."
+# mkdir -p $HOME/.warp
+# cd $HOME/.warp/
+# git clone https://github.com/warpdotdev/themes.git
+# mkdir -p $HOME/.warp/themes/custom
+# cp -rf .warp/themes/custom/ $HOME/.warp/themes/custom/
+# echo "Warp theme setup complete."
 
 # Install VS Code extensions listed in .vscode.extensions
 # The file is CSV with optional comment lines starting with '#'.

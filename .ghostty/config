@@ -1,0 +1,34 @@
+# All Settings refer for https://ghostty.org/docs/config/reference
+# Basic Settings
+command = /bin/zsh
+working-directory = inherit
+abnormal-command-exit-runtime = 300
+scrollback-limit = 50000000
+
+# Clipboard Settings
+clipboard-read = allow
+clipboard-write = allow
+
+# Background Settings
+theme = Midnight In Mojave
+background-image = ~/.config/ghostty/yumemita.png
+background-image-opacity = 0.17
+background-image-fit = stretch
+
+# Font Settings
+font-family = 'HackGen Console NF'
+font-feature = "-calt"
+font-feature = "-dlig"
+font-feature = "-liga"
+font-size = 15
+
+# Cursor Settings
+cursor-opacity = 0.5
+cursor-style = bar
+
+# Window Settings
+title = Ghostty
+
+# Update Check
+auto-update = check
+auto-update-channel = stable
