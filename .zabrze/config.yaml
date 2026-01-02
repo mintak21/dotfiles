@@ -1,0 +1,18 @@
+abbrevs:
+  - name: display files
+    abbr: ll
+    snippet: eza --git -lh --time-style long-iso --group-directories-first --icons
+
+  - name: display files includes dotfiles
+    abbr: la
+    snippet: eza --git -alh --time-style long-iso --group-directories-first --icons
+
+  - name: tree
+    abbr: tree
+    snippet: eza -a -T -L 3
+
+  - name: claude code
+    abbr: cc
+    snippet: ENABLE_TOOL_SEARCH=true claude
+
+  
