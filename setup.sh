@@ -28,6 +28,12 @@ cp -f .starship.toml ~/.config/starship.toml
 # copy ghostty to HOME directory
 cp -rf .ghostty ~/.config/ghostty
 
+# copy claude to HOME directory
+cp -rf .claude/skills ~/claude/skills
+cp -rf .claude/sound ~/claude/sound
+cp -rf .claude/mcp.json ~/claude/mcp.json
+cp -rf .claude/settings.json ~/claude/settings.json
+
 # Already migrate to Ghostty
 # setup warp theme
 # mkdir -p $HOME/.warp
