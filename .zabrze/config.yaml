@@ -1,18 +1,51 @@
 abbrevs:
   - name: display files
     abbr: ll
-    snippet: eza --git -lh --time-style long-iso --group-directories-first --icons
-
+    snippet: eza -lh --created --modified --time-style long-iso --group-directories-first --icons
   - name: display files includes dotfiles
     abbr: la
-    snippet: eza --git -alh --time-style long-iso --group-directories-first --icons
-
+    snippet: eza -alh --created --modified --time-style long-iso --group-directories-first --icons
   - name: tree
     abbr: tree
     snippet: eza -a -T -L 3
-
+  - name: git switch
+    abbr: s
+    snippet: switch
+    context: '^git\s'
+  - name: git switch create
+    abbr: sc
+    snippet: switch --create
+    context: '^git\s'
+  - name: git switch back
+    abbr: sb
+    snippet: switch -
+    context: '^git\s'
+  - name: git branch all
+    abbr: ba
+    snippet: branch -a
+    context: '^git\s'
+  - name: git branch delete
+    abbr: bdf
+    snippet: branch -D
+    context: '^git\s'
+  - name: find files
+    abbr: fda
+    snippet: fd --hidden --case-sensitive
+  - name: terraform
+    abbr: tf
+    snippet: terraform
+  - name: terraform init
+    abbr: tfi
+    snippet: terraform init
+  - name: terraform plan
+    abbr: tfp
+    snippet: terraform plan -lock=false
+  - name: aws login
+    abbr: awsl
+    snippet: aws sso login --profile='{}'
   - name: claude code
     abbr: cc
-    snippet: ENABLE_TOOL_SEARCH=true claude
-
-  
+    snippet: claude --mcp-config=~/.claude/.mcp.json
+  - name: ccusage
+    abbr: ccusage
+    snippet: npx -y ccusage@latest
