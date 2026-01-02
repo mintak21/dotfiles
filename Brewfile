@@ -1,4 +1,5 @@
 brew "awscli"
+brew "bat"
 brew "ripgrep"
 brew "codex"
 brew "eza"
