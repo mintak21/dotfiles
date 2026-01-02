@@ -11,8 +11,9 @@ clipboard-write = allow
 
 # Background Settings
 theme = Midnight In Mojave
+# theme = Xcode Dark hc
 background-image = ~/.config/ghostty/yumemita.png
-background-image-opacity = 0.17
+background-image-opacity = 0.15
 background-image-fit = stretch
 
 # Font Settings
@@ -23,8 +24,11 @@ font-feature = "-liga"
 font-size = 15
 
 # Cursor Settings
-cursor-opacity = 0.5
-cursor-style = bar
+cursor-opacity = 0.7
+cursor-style = block
+cursor-style-blink = false
+
+unfocused-split-opacity = 0.825
 
 # Window Settings
 title = Ghostty
