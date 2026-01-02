@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Install Homebrew packages
+brew bundle
+
 # Get user input
 read -p "Enter your Git user name: " git_user_name
 read -p "Enter your Git user email: " git_user_email
