@@ -10,8 +10,6 @@
 [color]
   ui = auto
 [alias]
-  ; co = checkout
-  ; cob = checkout -b # <new_branch> ブランチ作成用
   s = switch
   sc = switch --create # <new_branch> ブランチ作成用
   sb = switch - # 1つ前のブランチに戻る
@@ -50,9 +48,9 @@
 [gui]
   encoding = utf-8
 [push]
-  #default = current	#upstreamが設定されてなくても同じ名前のブランチを勝手に作ってpushしてくれる
+  default = current	#upstreamが設定されてなくても同じ名前のブランチを勝手に作ってpushしてくれる
   #default = upstream	#git branch -vvで確認できるupstreamブランチが設定されていないと失敗
-  default = simple       #upstreamが設定されているかつそれが同一名称でないと失敗、デフォルトで初心者向け
+  #default = simple       #upstreamが設定されているかつそれが同一名称でないと失敗、デフォルトで初心者向け
   # see https://qiita.com/awakia/items/6aaea1ffecba725be601
 [diff]
   algorithm = histogram
