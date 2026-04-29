@@ -1,10 +1,10 @@
 abbrevs:
   - name: display files
     abbr: ll
-    snippet: eza -lh --created --modified --time-style long-iso --group-directories-first --icons
+    snippet: eza -lh --created --modified --time-style long-iso --group-directories-first --icons auto
   - name: display files includes dotfiles
     abbr: la
-    snippet: eza -alh --created --modified --time-style long-iso --group-directories-first --icons
+    snippet: eza -alh --created --modified --time-style long-iso --group-directories-first --icons auto
   - name: tree
     abbr: tree
     snippet: eza -a -T -L 3
@@ -43,9 +43,6 @@ abbrevs:
   - name: aws login
     abbr: awsl
     snippet: aws sso login --profile='{}'
-  - name: claude code
-    abbr: cc
-    snippet: claude --mcp-config=~/.claude/.mcp.json
-  - name: ccusage
-    abbr: ccusage
-    snippet: npx -y ccusage@latest
+  - name: kubernetes cli command
+    abbr: k
+    snippet: kubectl
