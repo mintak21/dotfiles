@@ -9,17 +9,10 @@ My personal dotfiles.
     ```bash
     git clone https://github.com/mintak21/dotfiles.git
     ```
-
-2.  Navigate to the `dotfiles` directory:
-
-    ```bash
-    cd dotfiles
-    ```
-
-3.  Run the setup script:
+2.  Run the setup script:
 
     ```bash
-    ./setup.sh
+    bash .scripts/setup.sh
     ```
 
-4.  The script will prompt you to enter your Git user name and email.
+3.  The script will prompt you to enter your Git user name and email.
